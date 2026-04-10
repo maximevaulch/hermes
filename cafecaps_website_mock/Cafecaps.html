@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafecaps Thailand — Premium Coffee Capsules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --coffee-dark: #1a0f0a;
+      --coffee-medium: #3d2317;
+      --coffee-light: #6b3d24;
+      --cream: #f5f0e8;
+      --gold: #c8963e;
+      --gold-light: #e8c078;
+      --white: #ffffff;
+      --gray-50: #faf9f7;
+      --gray-100: #f7f5f2;
+      --gray-200: #e8e4df;
+      --gray-300: #d4cfc8;
+      --gray-400: #9a948c;
+      --text: #1a0f0a;
+      --text-muted: #7a6f68;
+      --error: #c0392b;
+      --success: #27ae60;
+      --star: #f5a623;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    /* NAV */
+    .nav { background: var(--white); border-bottom: 1px solid var(--gray-200); position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--coffee-dark); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--gold); }
+    .nav-tabs { display: flex; gap: 4px; list-style: none; align-items: center; background: var(--gray-100); padding: 4px; border-radius: 12px; }
+    .nav-tab { padding: 7px 16px; border-radius: 8px; font-size: 0.85rem; font-weight: 500; cursor: pointer; color: var(--text-muted); border: none; background: none; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+    .nav-tab:hover { color: var(--text); }
+    .nav-tab.active { background: var(--white); color: var(--coffee-dark); box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .nav-actions .icon-btn { background: none; border: none; cursor: pointer; color: var(--text); padding: 6px; border-radius: 8px; transition: background 0.2s, color 0.2s; display: flex; align-items: center; }
+    .nav-actions .icon-btn:hover { background: var(--gray-100); color: var(--gold); }
+    .cart-btn { display: flex; align-items: center; gap: 6px; background: var(--coffee-dark); color: var(--white); border: none; padding: 9px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: background 0.2s; font-family: 'Inter', sans-serif; }
+    .cart-btn:hover { background: var(--coffee-medium); }
+    .cart-count { background: var(--gold); color: var(--white); border-radius: 50%; width: 18px; height: 18px; font-size: 0.7rem; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+
+    /* ─── SECTIONS ─── */
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+
+    /* ─── SHARED ─── */
+    .section-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .section-title { font-size: 2.4rem; color: var(--coffee-dark); margin-bottom: 16px; }
+    .section-sub { font-size: 1rem; color: var(--text-muted); max-width: 520px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 56px; }
+
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--coffee-dark); padding: 13px 26px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; border: none; cursor: pointer; font-family: 'Inter', sans-serif; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,150,62,0.35); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--cream); padding: 13px 26px; border-radius: 50px; font-size: 0.9rem; font-weight: 500; text-decoration: none; border: 1.5px solid rgba(245,240,232,0.3); transition: border-color 0.2s, color 0.2s; }
+    .btn-secondary:hover { border-color: var(--cream); color: var(--white); }
+
+    /* ─── HERO ─── */
+    .hero { background: var(--coffee-dark); position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .hero-inner { max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; z-index: 1; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(200,150,62,0.15); border: 1px solid rgba(200,150,62,0.3); color: var(--gold-light); padding: 6px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px; }
+    .hero h1 { font-size: 3.2rem; color: var(--cream); margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: var(--gold); }
+    .hero-sub { font-size: 1.05rem; color: rgba(245,240,232,0.7); margin-bottom: 36px; max-width: 440px; line-height: 1.7; }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+    .hero-image-wrapper { position: relative; width: 380px; height: 380px; }
+    .hero-circle { width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 40% 40%, var(--coffee-light) 0%, var(--coffee-dark) 70%); display: flex; align-items: center; justify-content: center; box-shadow: 0 32px 80px rgba(0,0,0,0.5); }
+    .hero-capsule-grid { position: absolute; inset: -16px; display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; animation: float 6s ease-in-out infinite; }
+    .hero-cap { width: 50px; height: 72px; border-radius: 25px 25px 18px 18px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.6rem; text-align: center; color: var(--white); box-shadow: 0 4px 14px rgba(0,0,0,0.3); line-height: 1.1; padding: 4px; }
+    .cap-1{background:linear-gradient(135deg,#c8963e,#8b5e2a);transform:rotate(-8deg);}
+    .cap-2{background:linear-gradient(135deg,#2d1b0e,#5c3a1e);transform:rotate(4deg);}
+    .cap-3{background:linear-gradient(135deg,#8b3a1a,#c45c2a);transform:rotate(-3deg);}
+    .cap-4{background:linear-gradient(135deg,#1a3d2e,#2d6b4a);transform:rotate(6deg);}
+    .cap-5{background:linear-gradient(135deg,#c8963e,#6b3d24);transform:rotate(-5deg);}
+    .cap-6{background:linear-gradient(135deg,#3d2317,#6b3d24);transform:rotate(3deg);}
+    .cap-7{background:linear-gradient(135deg,#8b1a1a,#c43030);transform:rotate(-6deg);}
+    .cap-8{background:linear-gradient(135deg,#1a2a4d,#2d4a7a);transform:rotate(5deg);}
+    .cap-9{background:linear-gradient(135deg,#4a3020,#8b5a30);transform:rotate(-2deg);}
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+
+    /* ─── FEATURES ─── */
+    .features { background: var(--white); padding: 48px 24px; border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
+    .features-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 32px; }
+    .feature { text-align: center; padding: 0 16px; }
+    .feature-icon { width: 48px; height: 48px; margin: 0 auto 16px; background: var(--gray-100); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+    .feature h4 { font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
+    .feature p { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* ─── CATEGORIES ─── */
+    .categories { padding: 96px 24px; max-width: 1200px; margin: 0 auto; }
+    .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .cat-card { position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; text-decoration: none; display: block; }
+    .cat-card-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-dark)); transition: transform 0.4s ease; }
+    .cat-card:hover .cat-card-bg { transform: scale(1.04); }
+    .cat-card-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding: 36px; }
+    .cat-icon { width: 60px; height: 84px; border-radius: 30px 30px 20px 20px; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+    .cat-nespresso .cat-icon { background: linear-gradient(135deg, #c8963e, #6b3d24); }
+    .cat-dolce .cat-icon { background: linear-gradient(135deg, #8b3a1a, #c45c2a); }
+    .cat-card h3 { font-size: 1.5rem; color: var(--white); margin-bottom: 6px; }
+    .cat-card p { font-size: 0.88rem; color: rgba(245,240,232,0.65); margin-bottom: 20px; }
+    .cat-link { display: inline-flex; align-items: center; gap: 6px; color: var(--gold-light); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: gap 0.2s; }
+    .cat-card:hover .cat-link { gap: 10px; }
+
+    /* ─── PRODUCTS ─── */
+    .products { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+    .products-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; margin-bottom: 40px; }
+    .product-card { background: var(--white); border-radius: 20px; overflow: hidden; border: 1px solid var(--gray-200); transition: transform 0.25s, box-shadow 0.25s; cursor: pointer; text-decoration: none; display: block; color: inherit; }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(26,15,10,0.12); }
+    .product-image { aspect-ratio: 1; background: var(--gray-100); display: flex; align-items: center; justify-content: center; position: relative; }
+    .product-image-inner { width: 72px; height: 100px; border-radius: 36px 36px 22px 22px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .product-tag { position: absolute; top: 12px; left: 12px; background: var(--gold); color: var(--white); font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 50px; }
+    .product-info { padding: 18px; }
+    .product-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; color: var(--coffee-dark); }
+    .product-desc { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 10px; }
+    .product-footer { display: flex; align-items: center; justify-content: space-between; }
+    .product-price { font-weight: 700; font-size: 1rem; color: var(--coffee-dark); }
+    .product-btn-sm { background: var(--coffee-dark); color: var(--white); border: none; padding: 6px 12px; border-radius: 50px; font-size: 0.73rem; font-weight: 500; cursor: pointer; transition: background 0.2s; font-family: 'Inter', sans-serif; }
+    .product-btn-sm:hover { background: var(--coffee-medium); }
+    .view-all { text-align: center; }
+
+    /* ─── LOCATION ─── */
+    .location { background: var(--coffee-dark); padding: 96px 24px; }
+    .location-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .location-text { color: var(--white); }
+    .location-text .section-label { color: var(--gold); }
+    .location-text h2 { font-size: 2.2rem; margin-bottom: 16px; color: var(--cream); }
+    .location-text > p { color: rgba(245,240,232,0.65); margin-bottom: 32px; line-height: 1.7; }
+    .info-list { list-style: none; }
+    .info-list li { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; color: rgba(245,240,232,0.85); font-size: 0.92rem; }
+    .info-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(200,150,62,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .info-icon svg { width: 18px; height: 18px; stroke: var(--gold); fill: none; stroke-width: 2; }
+    .location-map { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; }
+    .location-map iframe { width: 100%; height: 100%; border: none; filter: brightness(0.85) contrast(1.1); }
+
+    /* ─── FOOTER ─── */
+    .footer { background: #110a06; color: rgba(245,240,232,0.6); padding: 64px 24px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand .nav-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 20px; }
+    .social-links { display: flex; gap: 12px; }
+    .social-link { width: 38px; height: 38px; border-radius: 10px; background: rgba(245,240,232,0.08); display: flex; align-items: center; justify-content: center; color: rgba(245,240,232,0.6); text-decoration: none; transition: background 0.2s, color 0.2s; font-size: 0.85rem; font-weight: 600; }
+    .social-link:hover { background: var(--gold); color: var(--white); }
+    .footer-col h4 { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); margin-bottom: 20px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a { color: rgba(245,240,232,0.55); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(245,240,232,0.08); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom a { color: rgba(245,240,232,0.4); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--gold); }
+    .disclaimer { font-size: 0.72rem; color: rgba(245,240,232,0.25); max-width: 500px; text-align: right; }
+
+    /* ═══════════════════════════════════
+       ABOUT PAGE
+    ═══════════════════════════════════ */
+    .page-hero { background: var(--coffee-dark); padding: 72px 24px 90px; text-align: center; position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(200,150,62,0.12) 0%, transparent 70%); top: -200px; left: 50%; transform: translateX(-50%); }
+    .page-hero h1 { font-size: 3rem; color: var(--cream); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: normal; color: var(--gold); }
+    .page-hero p { color: rgba(245,240,232,0.65); max-width: 500px; margin: 0 auto; font-size: 1.05rem; line-height: 1.7; }
+
+    .story { padding: 96px 24px; max-width: 1200px; margin: 0 auto; }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .story-visual { position: relative; }
+    .story-image-main { width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-dark)); border-radius: 24px; display: flex; align-items: center; justify-content: center; }
+    .story-image-main .inner-text { font-family: 'Playfair Display', serif; font-size: 3rem; color: rgba(245,240,232,0.15); font-weight: 700; text-align: center; line-height: 1.3; }
+    .story-badge { position: absolute; bottom: -16px; right: -16px; background: var(--gold); color: var(--white); padding: 18px 24px; border-radius: 16px; text-align: center; box-shadow: 0 12px 32px rgba(200,150,62,0.35); }
+    .story-badge .number { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; display: block; line-height: 1; }
+    .story-badge .label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.9; }
+    .story-text h2 { font-size: 2rem; color: var(--coffee-dark); margin-bottom: 20px; }
+    .story-text > p { color: var(--text-muted); margin-bottom: 18px; font-size: 0.95rem; line-height: 1.8; }
+    .story-quote { border-left: 3px solid var(--gold); padding: 14px 20px; margin: 24px 0; background: var(--white); border-radius: 0 12px 12px 0; }
+    .story-quote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; color: var(--coffee-dark); margin-bottom: 6px; }
+    .story-quote cite { font-size: 0.82rem; color: var(--text-muted); font-style: normal; }
+
+    .values { background: var(--white); border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); padding: 80px 24px; }
+    .values-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; max-width: 1200px; margin: 0 auto; }
+    .value-card { text-align: center; padding: 32px 24px; border-radius: 18px; background: var(--gray-100); border: 1px solid var(--gray-200); }
+    .value-icon { width: 56px; height: 56px; border-radius: 16px; background: var(--coffee-dark); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+    .value-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; margin-bottom: 8px; color: var(--coffee-dark); }
+    .value-card p { font-size: 0.86rem; color: var(--text-muted); line-height: 1.7; }
+
+    .timeline-section { padding: 80px 24px; max-width: 800px; margin: 0 auto; }
+    .timeline { position: relative; padding-left: 36px; }
+    .timeline::before { content: ''; position: absolute; left: 7px; top: 0; bottom: 0; width: 2px; background: var(--gray-200); }
+    .timeline-item { margin-bottom: 36px; position: relative; }
+    .timeline-dot { position: absolute; left: -36px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--gold); border: 3px solid var(--cream); box-shadow: 0 0 0 2px var(--gold); }
+    .timeline-year { font-size: 0.75rem; font-weight: 600; color: var(--gold); letter-spacing: 0.08em; margin-bottom: 4px; }
+    .timeline-item h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--coffee-dark); margin-bottom: 4px; }
+    .timeline-item p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
+
+    .team { background: var(--coffee-dark); padding: 80px 24px; }
+    .team-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+    .team .section-label { color: var(--gold); }
+    .team .section-title { color: var(--cream); font-size: 2.2rem; margin-bottom: 12px; }
+    .team .section-sub { color: rgba(245,240,232,0.6); max-width: 480px; margin: 0 auto 48px; }
+    .team-grid { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .team-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(245,240,232,0.1); border-radius: 18px; padding: 28px 24px; width: 200px; }
+    .team-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--coffee-light)); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); }
+    .team-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--cream); margin-bottom: 3px; }
+    .team-card .role { font-size: 0.78rem; color: var(--gold); font-weight: 500; margin-bottom: 10px; }
+    .team-card p { font-size: 0.8rem; color: rgba(245,240,232,0.5); line-height: 1.6; }
+
+    /* ═══════════════════════════════════
+       CONTACT PAGE
+    ═══════════════════════════════════ */
+    .contact-section { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+    .contact-info h2 { font-size: 1.7rem; color: var(--coffee-dark); margin-bottom: 14px; }
+    .contact-info > p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 28px; line-height: 1.7; }
+    .info-block { margin-bottom: 26px; }
+    .info-block h4 { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .info-block ul { list-style: none; }
+    .info-block ul li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.9rem; color: var(--text); }
+    .info-icon { width: 34px; height: 34px; border-radius: 10px; background: var(--gray-100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .info-icon svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 2; }
+    .info-block ul li a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+    .info-block ul li a:hover { color: var(--gold); }
+    .social-block h4 { font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .social-row { display: flex; gap: 10px; }
+    .social-btn { display: flex; align-items: center; gap: 7px; padding: 9px 14px; border-radius: 10px; font-size: 0.82rem; font-weight: 500; text-decoration: none; transition: transform 0.2s; }
+    .social-btn:hover { transform: translateY(-2px); }
+    .social-btn.ig { background: #E1306C; color: var(--white); }
+    .social-btn.fb { background: #1877F2; color: var(--white); }
+    .social-btn.line { background: #00B900; color: var(--white); }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table tr { border-bottom: 1px solid var(--gray-200); }
+    .hours-table td { padding: 7px 0; font-size: 0.88rem; }
+    .hours-table td:first-child { color: var(--text-muted); }
+    .hours-table td:last-child { font-weight: 500; text-align: right; }
+
+    .form-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 22px; padding: 36px; box-shadow: 0 4px 20px rgba(26,15,10,0.05); }
+    .form-card h3 { font-size: 1.35rem; color: var(--coffee-dark); margin-bottom: 6px; }
+    .form-card > p { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 24px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 500; margin-bottom: 5px; color: var(--coffee-dark); }
+    .form-group label span { color: var(--error); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-control { width: 100%; padding: 10px 13px; border: 1.5px solid var(--gray-200); border-radius: 11px; font-family: 'Inter', sans-serif; font-size: 0.88rem; color: var(--text); background: var(--gray-100); transition: border-color 0.2s, box-shadow 0.2s, background 0.2s; outline: none; }
+    .form-control:focus { border-color: var(--gold); background: var(--white); box-shadow: 0 0 0 3px rgba(200,150,62,0.15); }
+    .form-control::placeholder { color: var(--gray-400); }
+    textarea.form-control { resize: vertical; min-height: 100px; }
+    select.form-control { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239a948c' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 34px; cursor: pointer; }
+    .form-checkbox { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
+    .form-checkbox input { width: 16px; height: 16px; accent-color: var(--gold); margin-top: 2px; flex-shrink: 0; cursor: pointer; }
+    .form-checkbox span { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+    .btn-submit { width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--coffee-dark); color: var(--white); padding: 14px 24px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; font-family: 'Inter', sans-serif; margin-top: 22px; }
+    .btn-submit:hover { background: var(--coffee-medium); transform: translateY(-1px); }
+    .btn-submit svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .form-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 12px; text-align: center; }
+    .alert { padding: 11px 14px; border-radius: 11px; font-size: 0.86rem; margin-bottom: 14px; display: none; }
+    .alert-success { background: rgba(39,174,96,0.1); border: 1px solid rgba(39,174,96,0.3); color: var(--success); }
+    .alert-error { background: rgba(192,57,43,0.1); border: 1px solid rgba(192,57,43,0.3); color: var(--error); }
+
+    .map-section { padding: 0 24px 72px; max-width: 1200px; margin: 0 auto; }
+    .map-wrapper { border-radius: 22px; overflow: hidden; aspect-ratio: 16/5; border: 1px solid var(--gray-200); }
+    .map-wrapper iframe { width: 100%; height: 100%; border: none; filter: brightness(0.9) contrast(1.05); }
+
+    .faq { background: var(--white); border-top: 1px solid var(--gray-200); padding: 72px 24px; }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--gray-200); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { display: flex; align-items: center; justify-content: space-between; padding: 17px 0; cursor: pointer; gap: 14px; }
+    .faq-question h4 { font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--coffee-dark); }
+    .faq-toggle { width: 26px; height: 26px; border-radius: 50%; background: var(--gray-100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s, transform 0.3s; }
+    .faq-toggle svg { width: 13px; height: 13px; stroke: var(--text-muted); fill: none; stroke-width: 2; }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); background: var(--gold); }
+    .faq-item.open .faq-toggle svg { stroke: var(--white); }
+    .faq-answer { display: none; padding-bottom: 16px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.75; }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ═══════════════════════════════════
+       PRODUCT PAGE
+    ═══════════════════════════════════ */
+    .breadcrumb { background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 11px 24px; }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-muted); }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { color: var(--gray-300); }
+
+    .product-section { padding: 48px 24px 72px; max-width: 1200px; margin: 0 auto; }
+    .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+
+    .gallery-main { aspect-ratio: 1; background: var(--white); border-radius: 22px; border: 10px solid var(--gray-200); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; position: relative; overflow: hidden; }
+    .capsule-visual { width: 180px; height: 250px; border-radius: 90px 90px 55px 55px; background: linear-gradient(160deg, var(--gold-light), var(--coffee-medium)); box-shadow: 0 20px 50px rgba(61,35,23,0.35); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+    .capsule-visual .cap-brand { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+    .capsule-visual .cap-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); text-align: center; padding: 0 14px; }
+    .capsule-visual .cap-type { font-size: 0.65rem; color: rgba(255,255,255,0.5); }
+    .gallery-badge { position: absolute; top: 14px; left: 14px; background: var(--gold); color: var(--white); padding: 5px 12px; border-radius: 50px; font-size: 0.73rem; font-weight: 600; }
+
+    .gallery-thumbs { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+    .thumb { aspect-ratio: 1; background: var(--white); border: 2px solid var(--gray-200); border-radius: 11px; cursor: pointer; transition: border-color 0.2s; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .thumb.active { border-color: var(--gold); }
+    .thumb:hover { border-color: var(--gold-light); }
+    .thumb-capsule { width: 32px; height: 45px; border-radius: 16px 16px 11px 11px; }
+
+    .product-category { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .product-info h1 { font-size: 2.2rem; color: var(--coffee-dark); margin-bottom: 10px; }
+    .product-rating { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .stars { display: flex; gap: 1px; color: var(--star); font-size: 0.9rem; }
+    .rating-text { font-size: 0.83rem; color: var(--text-muted); }
+    .rating-text strong { color: var(--text); }
+    .product-description { font-size: 0.92rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 20px; }
+    .product-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 22px; }
+    .product-price { font-size: 1.85rem; font-weight: 700; color: var(--coffee-dark); }
+    .product-price-old { font-size: 0.95rem; color: var(--gray-400); text-decoration: line-through; }
+    .product-save { background: rgba(39,174,96,0.1); color: var(--success); font-size: 0.78rem; font-weight: 600; padding: 3px 9px; border-radius: 6px; }
+    .compat-badge { display: inline-flex; align-items: center; gap: 7px; background: var(--gray-100); border: 1px solid var(--gray-200); padding: 7px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 500; color: var(--text); margin-bottom: 22px; }
+    .compat-badge svg { width: 15px; height: 15px; stroke: var(--success); fill: none; stroke-width: 2; }
+
+    .variant-group { margin-bottom: 18px; }
+    .variant-label { font-size: 0.8rem; font-weight: 600; color: var(--coffee-dark); margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+    .variant-label span { font-weight: 400; color: var(--text-muted); font-size: 0.78rem; }
+    .variant-options { display: flex; gap: 8px; flex-wrap: wrap; }
+    .variant-btn { padding: 8px 16px; border: 1.5px solid var(--gray-200); border-radius: 11px; background: var(--white); font-size: 0.86rem; font-weight: 500; cursor: pointer; transition: all 0.2s; color: var(--text); font-family: 'Inter', sans-serif; }
+    .variant-btn:hover { border-color: var(--gold-light); }
+    .variant-btn.active { border-color: var(--gold); background: rgba(200,150,62,0.08); color: var(--coffee-dark); }
+    .variant-btn .v-price { display: block; font-size: 0.73rem; color: var(--text-muted); margin-top: 1px; }
+    .variant-btn.active .v-price { color: var(--gold); }
+
+    .intensity-group { margin-bottom: 22px; }
+    .intensity-label { font-size: 0.8rem; font-weight: 600; color: var(--coffee-dark); margin-bottom: 8px; }
+    .intensity-bar { display: flex; gap: 7px; align-items: center; }
+    .intensity-dot { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--gray-200); background: var(--white); cursor: pointer; transition: all 0.2s; }
+    .intensity-dot.active { border-color: var(--coffee-dark); background: var(--coffee-dark); }
+    .intensity-dot:hover { border-color: var(--gold); }
+    .intensity-label-right { font-size: 0.75rem; color: var(--text-muted); margin-left: 4px; }
+
+    .add-to-cart { display: flex; gap: 10px; margin-bottom: 20px; }
+    .qty-control { display: flex; align-items: center; background: var(--white); border: 1.5px solid var(--gray-200); border-radius: 13px; overflow: hidden; }
+    .qty-btn { width: 38px; height: 46px; background: none; border: none; font-size: 1.1rem; cursor: pointer; color: var(--text); transition: background 0.2s; font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; }
+    .qty-btn:hover { background: var(--gray-100); }
+    .qty-value { width: 40px; text-align: center; font-weight: 600; font-size: 0.92rem; border: none; background: none; font-family: 'Inter', sans-serif; color: var(--text); }
+    .btn-add { flex: 1; display: flex; align-items: center; justify-content: center; gap: 9px; background: var(--coffee-dark); color: var(--white); border: none; padding: 0 22px; border-radius: 13px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.2s, transform 0.15s; font-family: 'Inter', sans-serif; }
+    .btn-add:hover { background: var(--coffee-medium); transform: translateY(-1px); }
+    .btn-add svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .btn-wishlist { width: 46px; height: 46px; border: 1.5px solid var(--gray-200); border-radius: 13px; background: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all 0.2s; flex-shrink: 0; }
+    .btn-wishlist:hover, .btn-wishlist.active { border-color: var(--error); color: var(--error); }
+    .btn-wishlist.active { background: rgba(192,57,43,0.08); }
+    .btn-wishlist svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+    .trust-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; }
+    .trust-badge { display: flex; align-items: center; gap: 7px; font-size: 0.78rem; color: var(--text-muted); }
+    .trust-badge svg { width: 15px; height: 15px; stroke: var(--success); fill: none; stroke-width: 2; flex-shrink: 0; }
+
+    .divider { border: none; border-top: 1px solid var(--gray-200); margin: 22px 0; }
+
+    .detail-item { border-bottom: 1px solid var(--gray-200); }
+    .detail-item:last-child { border-bottom: none; }
+    .detail-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; cursor: pointer; }
+    .detail-header h4 { font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 600; color: var(--coffee-dark); }
+    .detail-header svg { width: 16px; height: 16px; stroke: var(--text-muted); fill: none; stroke-width: 2; transition: transform 0.3s; }
+    .detail-item.open .detail-header svg { transform: rotate(45deg); }
+    .detail-body { display: none; padding-bottom: 14px; font-size: 0.86rem; color: var(--text-muted); line-height: 1.75; }
+    .detail-item.open .detail-body { display: block; }
+    .detail-table { width: 100%; border-collapse: collapse; }
+    .detail-table tr { border-bottom: 1px solid var(--gray-200); }
+    .detail-table tr:last-child { border-bottom: none; }
+    .detail-table td { padding: 6px 0; }
+    .detail-table td:first-child { font-weight: 500; color: var(--coffee-dark); width: 45%; }
+    .detail-table td:last-child { color: var(--text-muted); }
+
+    .reviews-section { background: var(--white); border-top: 1px solid var(--gray-200); padding: 64px 24px; }
+    .reviews-inner { max-width: 1200px; margin: 0 auto; }
+    .reviews-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 36px; flex-wrap: wrap; gap: 14px; }
+    .reviews-header h2 { font-size: 1.8rem; color: var(--coffee-dark); }
+    .reviews-summary { display: flex; align-items: center; gap: 16px; }
+    .reviews-score { font-size: 2.6rem; font-weight: 700; color: var(--coffee-dark); line-height: 1; }
+    .reviews-meta .stars { margin-bottom: 3px; font-size: 0.9rem; color: var(--star); }
+    .reviews-meta p { font-size: 0.8rem; color: var(--text-muted); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .review-card { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 15px; padding: 20px; }
+    .review-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+    .reviewer { display: flex; align-items: center; gap: 10px; }
+    .reviewer-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--coffee-medium); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--cream); font-size: 0.85rem; }
+    .reviewer-name { font-weight: 600; font-size: 0.88rem; color: var(--coffee-dark); }
+    .reviewer-date { font-size: 0.75rem; color: var(--text-muted); }
+    .review-stars { color: var(--star); font-size: 0.82rem; letter-spacing: 1px; }
+    .review-verified { display: flex; align-items: center; gap: 4px; font-size: 0.7rem; color: var(--success); font-weight: 500; }
+    .review-verified svg { width: 11px; height: 11px; stroke: var(--success); fill: none; stroke-width: 2.5; }
+    .review-body { font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; }
+
+    .related-section { padding: 64px 24px; max-width: 1200px; margin: 0 auto; }
+    .related-header { margin-bottom: 32px; }
+    .related-header h2 { font-size: 1.8rem; color: var(--coffee-dark); }
+    .related-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .related-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 15px; overflow: hidden; text-decoration: none; display: block; color: inherit; transition: transform 0.25s, box-shadow 0.25s; }
+    .related-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(26,15,10,0.1); }
+    .related-img { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: var(--gray-100); }
+    .related-img-inner { width: 58px; height: 82px; border-radius: 29px 29px 18px 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .related-info { padding: 14px; }
+    .related-name { font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 600; color: var(--coffee-dark); margin-bottom: 5px; }
+    .related-price { font-weight: 700; font-size: 0.95rem; color: var(--coffee-dark); }
+    .related-price span { font-size: 0.75rem; color: var(--text-muted); font-weight: 400; text-decoration: line-through; margin-left: 5px; }
+
+    /* TOAST */
+    .toast { position: fixed; bottom: 24px; right: 24px; background: var(--coffee-dark); color: var(--white); padding: 13px 18px; border-radius: 13px; font-size: 0.86rem; font-weight: 500; display: flex; align-items: center; gap: 9px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); transform: translateY(100px); opacity: 0; transition: all 0.3s ease; z-index: 9999; }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 2; flex-shrink: 0; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 32px; }
+      .hero-text { display: flex; flex-direction: column; align-items: center; }
+      .hero-sub { margin: 0 auto 32px; }
+      .hero-actions { justify-content: center; }
+      .hero-visual { display: none; }
+      .hero h1 { font-size: 2.6rem; }
+      .story-grid, .contact-grid, .location-inner, .product-grid { grid-template-columns: 1fr; gap: 36px; }
+      .features-inner { grid-template-columns: repeat(2,1fr); }
+      .products-grid, .related-grid { grid-template-columns: repeat(2,1fr); }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-tabs { display: none; }
+      .hero h1 { font-size: 2.1rem; }
+      .cat-grid { grid-template-columns: 1fr; }
+      .products-grid, .related-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .values-grid { grid-template-columns: 1fr; }
+      .team-grid { gap: 16px; }
+      .team-card { width: 160px; padding: 22px 16px; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-card { padding: 24px 18px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .disclaimer { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" onclick="showSection('home'); return false;">Cafe<span>Caps</span></a>
+      <ul class="nav-tabs">
+        <li><button class="nav-tab active" onclick="showSection('home')" data-section="home">Home</button></li>
+        <li><button class="nav-tab" onclick="showSection('about')" data-section="about">About</button></li>
+        <li><button class="nav-tab" onclick="showSection('contact')" data-section="contact">Contact</button></li>
+        <li><button class="nav-tab" onclick="showSection('product')" data-section="product">Product</button></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="cart-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Cart <span class="cart-count" id="cart-count">1</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HOME ═══ -->
+  <div class="page-section active" id="section-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+            Premium Coffee, Delivered
+          </div>
+          <h1>Your Daily Cup,<br><em>Reimagined.</em></h1>
+          <p class="hero-sub">100% compatible capsules for Nespresso and Nescafe Dolce Gusto. Premium Thai-roasted blends at prices that make sense.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn-primary" onclick="showSection('product'); return false;">Shop Now
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn-secondary" onclick="showSection('contact'); return false;">Find Us in Bangkok</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <div class="hero-capsule-grid">
+              <div class="hero-cap cap-1">Ristretto</div>
+              <div class="hero-cap cap-2">Espresso</div>
+              <div class="hero-cap cap-3">Lungo</div>
+              <div class="hero-cap cap-4">Latte</div>
+              <div class="hero-cap cap-5">Mocha</div>
+              <div class="hero-cap cap-6">Flat W.</div>
+              <div class="hero-cap cap-7">Cappu.</div>
+              <div class="hero-cap cap-8">Macchi.</div>
+              <div class="hero-cap cap-9">Americano</div>
+            </div>
+            <div class="hero-circle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="features-inner">
+        <div class="feature">
+          <div class="feature-icon">?</div>
+          <h4>Free Delivery</h4>
+          <p>Across Thailand, no minimum</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">?</div>
+          <h4>100% Compatible</h4>
+          <p>Nespresso & Dolce Gusto</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">?</div>
+          <h4>Premium Roasts</h4>
+          <p>Thai-roasted blends</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">?</div>
+          <h4>Fast Dispatch</h4>
+          <p>Ships within 24 hours</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="section-header">
+        <p class="section-label">Our Range</p>
+        <h2 class="section-title">Two Systems. Endless Flavour.</h2>
+        <p class="section-sub">Whether you run Nespresso or Nescafe Dolce Gusto, we have the capsule that fits.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" onclick="showSection('product')">
+          <div class="cat-card-bg"></div>
+          <div class="cat-card-content">
+            <div class="cat-icon"></div>
+            <h3>Nespresso</h3>
+            <p>25+ blends and intensities, from light roast to dark espresso</p>
+            <span class="cat-link">Explore Collection
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="cat-card cat-dolce" onclick="showSection('product')">
+          <div class="cat-card-bg"></div>
+          <div class="cat-card-content">
+            <div class="cat-icon"></div>
+            <h3>Nescafe Dolce Gusto</h3>
+            <p>Bold espressos, creamy lattes, and everything in between</p>
+            <span class="cat-link">Explore Collection
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="section-header">
+        <p class="section-label">Bestsellers</p>
+        <h2 class="section-title">Our Most Loved Capsules</h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" onclick="showSection('product')">
+          <div class="product-image">
+            <div class="product-image-inner" style="background:linear-gradient(135deg,#c8963e,#6b3d24)"></div>
+            <span class="product-tag">New</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Signature Blend</h3>
+            <p class="product-desc">Intense, full-bodied. Box of 10.</p>
+            <div class="product-footer">
+              <span class="product-price">?349</span>
+              <button class="product-btn-sm" onclick="event.stopPropagation(); showSection('product')">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" onclick="showSection('product')">
+          <div class="product-image">
+            <div class="product-image-inner" style="background:linear-gradient(135deg,#8b3a1a,#c45c2a)"></div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Dolce Gusto Roma</h3>
+            <p class="product-desc">Rich espresso, velvety crema. Box of 15.</p>
+            <div class="product-footer">
+              <span class="product-price">?299</span>
+              <button class="product-btn-sm" onclick="event.stopPropagation(); showSection('product')">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" onclick="showSection('product')">
+          <div class="product-image">
+            <div class="product-image-inner" style="background:linear-gradient(135deg,#2d1b0e,#5c3a1e)"></div>
+            <span class="product-tag">Popular</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Espresso Forte</h3>
+            <p class="product-desc">Bold and smoky. Box of 10.</p>
+            <div class="product-footer">
+              <span class="product-price">?329</span>
+              <button class="product-btn-sm" onclick="event.stopPropagation(); showSection('product')">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" onclick="showSection('product')">
+          <div class="product-image">
+            <div class="product-image-inner" style="background:linear-gradient(135deg,#1a3d2e,#2d6b4a)"></div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Latte Macchiato</h3>
+            <p class="product-desc">Creamy milk, smooth espresso. Box of 15.</p>
+            <div class="product-footer">
+              <span class="product-price">?329</span>
+              <button class="product-btn-sm" onclick="event.stopPropagation(); showSection('product')">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all">
+        <a href="#" class="btn-primary" onclick="showSection('product'); return false;" style="background:var(--coffee-dark);color:var(--white)">
+          View All Products
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location">
+      <div class="location-inner">
+        <div class="location-text">
+          <p class="section-label">Visit Us</p>
+          <h2>Come Say Hello</h2>
+          <p>Our physical shop is in the heart of Phrakanong. Pick up your capsules, grab a coffee, or just chat with us.</p>
+          <ul class="info-list">
+            <li>
+              <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <span><strong>1/2 Soi Samanchan, Sukhumvit 40</strong><br>Phrakanong, Klongtoei 10110 Bangkok</span>
+            </li>
+            <li>
+              <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.13 1 .4 2 .7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.81.3 1.81.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <span><strong>+66 2 392 19 78</strong></span>
+            </li>
+            <li>
+              <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <span><strong>Line: cafecaps</strong></span>
+            </li>
+            <li>
+              <div class="info-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <span>Open Daily — 8:00 AM to 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4!2d100.5776!3d13.7161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQyJzQ1LjgiTiAxMDDCsDM0JzQyLjgiRQ!5e0!3m2!1sen!2sth!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" onclick="showSection('home'); return false;">Cafe<span>Caps</span></a>
+            <p>Premium compatible coffee capsules for Nespresso and Nescafe Dolce Gusto. Roasted in Thailand, delivered nationwide.</p>
+            <div class="social-links">
+              <a href="#" class="social-link">IG</a>
+              <a href="#" class="social-link">FB</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('product'); return false;">Nespresso Capsules</a></li>
+              <li><a href="#" onclick="showSection('product'); return false;">Dolce Gusto Capsules</a></li>
+              <li><a href="#" onclick="showSection('product'); return false;">Bestsellers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('contact'); return false;">FAQs</a></li>
+              <li><a href="#" onclick="showSection('contact'); return false;">Contact Us</a></li>
+              <li><a href="#" onclick="showSection('contact'); return false;">Shipping</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('about'); return false;">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Cafecaps Ltd. All rights reserved.</span>
+          <span class="disclaimer">The Nespresso and Nescafe Dolce Gusto trademarks belong to third parties and are in no way associated with Cafecaps Ltd.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <div class="page-section" id="section-about">
+    <div class="page-hero">
+      <p class="section-label" style="color:var(--gold)">Our Story</p>
+      <h1>Coffee is <em>Personal</em></h1>
+      <p>We started Cafecaps with one simple belief: great coffee shouldn't be complicated or expensive. Just a perfect cup, every day, at home.</p>
+    </div>
+
+    <section class="story">
+      <div class="story-grid">
+        <div class="story-visual">
+          <div class="story-image-main"><div class="inner-text">Cafe<br>Caps</div></div>
+          <div class="story-badge"><span class="number">2021</span><span class="label">Est. Bangkok</span></div>
+        </div>
+        <div class="story-text">
+          <h2>From a Small Kitchen to Bangkok's Best Kept Secret</h2>
+          <p>Cafecaps began when our founder, a lifelong coffee lover, got frustrated with the high cost of branded capsules. After months of testing roasts, blends, and compatibility, we found the formula: premium coffee at a fair price, with capsules that fit your machine perfectly.</p>
+          <p>Today we're proud to supply thousands of Thai coffee drinkers every month, from our little shop on Sukhumvit 40 to doorsteps across the country.</p>
+          <div class="story-quote">
+            <p>"We don't just sell capsules. We help people fall in love with their morning ritual all over again."</p>
+            <cite>— Cafecaps Founder</cite>
+          </div>
+          <p>Every blend is 100% compatible with Nespresso and Nescafe Dolce Gusto machines, and every batch is roasted and packed in Thailand for maximum freshness.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="section-header">
+        <p class="section-label">What We Stand For</p>
+        <h2 class="section-title">Our Values</h2>
+        <p class="section-sub">Three principles that guide everything we do, from the blends we choose to the way we pack your order.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">?</div>
+          <h3>Quality First</h3>
+          <p>We test every blend rigorously. Only the coffees that genuinely impress us make it to the shop. No compromises on taste.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">?</div>
+          <h3>Fair Pricing</h3>
+          <p>Great coffee should be affordable. By cutting out the middlemen, we pass the savings directly to you.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">?</div>
+          <h3>Thai Roots</h3>
+          <p>A Bangkok business through and through. Roasting and packing locally supports Thai craft and expertise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <div class="section-header">
+        <p class="section-label">Our Journey</p>
+        <h2 class="section-title">How We Got Here</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2019</p>
+          <h3>The Idea</h3>
+          <p>After years of paying over the odds for branded capsules, our founder started experimenting with compatible blends from a home kitchen in Phrakanong.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2021</p>
+          <h3>Cafecaps is Born</h3>
+          <p>We opened our shop on Sukhumvit 40 with just 6 blends. Word spread fast — Bangkok's coffee drinkers wanted something better and cheaper.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2022</p>
+          <h3>Going National</h3>
+          <p>Launched nationwide delivery with free shipping across Thailand. Product range grew to cover both Nespresso and Dolce Gusto systems.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="timeline-year">2024</p>
+          <h3>25+ Blends & Still Growing</h3>
+          <p>Over 25 blends, thousands of customers, and we're constantly testing new roasts to add to the collection.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="team-inner">
+        <p class="section-label">The People</p>
+        <h2 class="section-title">Meet the Team</h2>
+        <p class="section-sub">A small, passionate group of coffee nerds and logistics obsessives.</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">M</div>
+            <h4>Max</h4>
+            <p class="role">Founder & Coffee</p>
+            <p>Tests every blend personally. Has strong opinions about extraction pressure.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">N</div>
+            <h4>Noot</h4>
+            <p class="role">Operations</p>
+            <p>Makes sure your order ships same day, every day.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">F</div>
+            <h4>Fai</h4>
+            <p class="role">Customer Happiness</p>
+            <p>Answers every message and knows every blend inside out.</p>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">T</div>
+            <h4>Tam</h4>
+            <p class="role">Procurement</p>
+            <p>Finds the best Thai roasters and negotiates so you pay less.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:80px 24px; text-align:center; max-width:700px; margin:0 auto;">
+      <h2 style="font-size:2.2rem; color:var(--coffee-dark); margin-bottom:14px;">Ready to Taste the Difference?</h2>
+      <p style="color:var(--text-muted); margin-bottom:30px;">Explore our full range of Nespresso and Dolce Gusto compatible capsules. Free delivery across Thailand on every order.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="#" class="btn-primary" onclick="showSection('product'); return false;">Shop All Capsules
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#" class="btn-primary" style="background:var(--coffee-dark);color:var(--white)" onclick="showSection('contact'); return false;">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer (repeated) -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" onclick="showSection('home'); return false;">Cafe<span>Caps</span></a>
+            <p>Premium compatible coffee capsules for Nespresso and Nescafe Dolce Gusto. Roasted in Thailand, delivered nationwide.</p>
+            <div class="social-links"><a href="#" class="social-link">IG</a><a href="#" class="social-link">FB</a></div>
+          </div>
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('product'); return false;">Nespresso Capsules</a></li>
+              <li><a href="#" onclick="showSection('product'); return false;">Dolce Gusto Capsules</a></li>
+              <li><a href="#" onclick="showSection('product'); return false;">Bestsellers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('contact'); return false;">FAQs</a></li>
+              <li><a href="#" onclick="showSection('contact'); return false;">Contact Us</a></li>
+              <li><a href="#" onclick="showSection('contact'); return false;">Shipping</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#" onclick="showSection('about'); return false;">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Cafecaps Ltd. All rights reserved.</span>
+          <span class="disclaimer">The Nespresso and Nescafe Dolce Gusto trademarks belong to third parties and are in no way associated with Cafecaps Ltd.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <div class="page-section" id="section-contact">
+    <div class="page-hero">
+      <p class="section-label" style="color:var(--gold)">Get in Touch</p>
+      <h1>We'd Love to <em>Hear</em> From You</h1>
+      <p>Questions, feedback, wholesale inquiries — drop us a message and we'll get back to you within a few hours.</p>
+    </div>
+
+    <section class="contact-section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Let's Talk Coffee</h2>
+          <p>Whether you're a first-time buyer or a loyal customer, we're here to help.</p>
+
+          <div class="info-block">
+            <h4>Visit Us</h4>
+            <ul>
+              <li>
+                <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <span>1/2 Soi Samanchan, Sukhumvit 40<br>Phrakanong, Klongtoei 10110<br>Bangkok, Thailand</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.13 1 .4 2 .7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.81.3 1.81.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <a href="tel:+6623921978">+66 2 392 19 78</a>
+              </li>
+              <li>
+                <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <a href="mailto:info@cafecaps.com">info@cafecaps.com</a>
+              </li>
+              <li>
+                <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                <span>Line: <strong>@cafecaps</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4>Opening Hours</h4>
+            <table class="hours-table">
+              <tr><td>Monday — Friday</td><td>8:00 AM — 6:00 PM</td></tr>
+              <tr><td>Saturday — Sunday</td><td>9:00 AM — 5:00 PM</td></tr>
+              <tr><td>Holidays</td><td>Closed</td></tr>
+            </table>
+          </div>
+
+          <div class="social-block">
+            <h4>Follow Us</h4>
+            <div class="social-row">
+              <a href="#" class="social-btn ig">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="#" class="social-btn fb">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="#" class="social-btn line">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 4.8 0 10.2c0 3.2 1.6 6.2 4.2 8.2v-3.2H2.4v-2.4h1.8V8.2c0-1.8 1.1-2.8 2.7-2.8.8 0 1.6.1 1.6.1v1.8H8c-.8 0-1 .4-1 1v1.5h1.8L10.6 14H8.8v3.2C10.4 17.6 12 18 12 18s-.2 1.4-1.8 1.4c1.8.6 3.8-.4 3.8-1.6V10.2C19.2 4.8 13.6 0 12 0z"/></svg>
+                LINE
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div id="alert-success" class="alert alert-success">Message sent! We'll get back to you within a few hours. ?</div>
+          <div id="alert-error" class="alert alert-error">Something went wrong. Please try again.</div>
+          <h3>Send a Message</h3>
+          <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+          <form onsubmit="handleSubmitC(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span>*</span></label>
+                <input type="text" id="firstName" class="form-control" placeholder="e.g. Somchai" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span>*</span></label>
+                <input type="text" id="lastName" class="form-control" placeholder="e.g. Suwan" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" class="form-control" placeholder="you@email.com" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+66 8x xxx xxxx">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject <span>*</span></label>
+                <select id="subject" class="form-control" required>
+                  <option value="" disabled selected>Select a topic</option>
+                  <option>Order Inquiry</option>
+                  <option>Product Question</option>
+                  <option>Wholesale / Bulk Order</option>
+                  <option>Return / Refund</option>
+                  <option>Feedback</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span>*</span></label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <label class="form-checkbox">
+              <input type="checkbox" id="newsletter">
+              <span>I'd like to receive updates on new blends and special offers from Cafecaps.</span>
+            </label>
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <p class="form-note">We typically respond within 2–4 hours during business hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-section">
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4!2d100.5776!3d13.7161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQyJzQ1LjgiTiAxMDDCsDM0JzQyLjgiRQ!5e0!3m2!1sen!2sth!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <section class="faq">
+      <div class="faq-inner">
+        <div class="section-header">
+          <p class="section-label">Common Questions</p>
+          <h2 class="section-title">FAQ</h2>
+        </div>
+        <div class="faq-item open">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Do you offer free delivery?</h4>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Yes! Free delivery across Thailand on every order, no minimum spend required.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Which capsule systems do you carry?</h4>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Nespresso (Original and Vertuo compatible) and Nescafe Dolce Gusto. All capsules are 100% compatible — no adapters needed.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>How long does delivery take?</h4>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Bangkok: 1–2 business days. Other provinces: 2–4 business days. Orders before 2 PM ship same day.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Can I return or exchange capsules?</h4>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Yes, faulty or misdescribed capsules can be replaced or refunded within 30 days. Due to hygiene regulations, opened boxes can only be returned if defective.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <h4>Do you offer wholesale pricing?</h4>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Yes! Special pricing for cafes, offices, and bulk orders of 20+ boxes. Contact us at info@cafecaps.com for a custom quote.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (repeated) -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" onclick="showSection('home'); return false;">Cafe<span>Caps</span></a>
+            <p>Premium compatible coffee capsules. Roasted in Thailand, delivered nationwide.</p>
+            <div class="social-links"><a href="#" class="social-link">IG</a><a href="#" class="social-link">FB</a></div>
+          </div>
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul><li><a href="#" onclick="showSection('product'); return false;">Nespresso</a></li><li><a href="#" onclick="showSection('product'); return false;">Dolce Gusto</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul><li><a href="#" onclick="showSection('contact'); return false;">FAQs</a></li><li><a href="#" onclick="showSection('contact'); return false;">Contact Us</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul><li><a href="#" onclick="showSection('about'); return false;">About Us</a></li><li><a href="#">Disclaimer</a></li></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Cafecaps Ltd.</span>
+          <span class="disclaimer">The Nespresso and Nescafe Dolce Gusto trademarks belong to third parties and are in no way associated with Cafecaps Ltd.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══ PRODUCT ═══ -->
+  <div class="page-section" id="section-product">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="#" onclick="showSection('home'); return false;">Home</a>
+        <span>/</span>
+        <a href="#" onclick="showSection('product'); return false;">Shop</a>
+        <span>/</span>
+        <span style="color:var(--text)">Signature Blend</span>
+      </div>
+    </div>
+
+    <section class="product-section">
+      <div class="product-grid">
+
+        <!-- Gallery -->
+        <div>
+          <div class="gallery-main">
+            <span class="gallery-badge">Bestseller</span>
+            <div class="capsule-visual">
+              <span class="cap-brand">Cafecaps</span>
+              <span class="cap-name">Signature Blend</span>
+              <span class="cap-type">Nespresso Compatible</span>
+            </div>
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active"><div class="thumb-capsule" style="background:linear-gradient(135deg,#c8963e,#6b3d24)"></div></div>
+            <div class="thumb"><div class="thumb-capsule" style="background:linear-gradient(135deg,#3d2317,#6b3d24)"></div></div>
+            <div class="thumb"><div class="thumb-capsule" style="background:linear-gradient(135deg,#8b3a1a,#c45c2a)"></div></div>
+            <div class="thumb"><div class="thumb-capsule" style="background:linear-gradient(135deg,#2d1b0e,#5c3a1e)"></div></div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <p class="product-category">Nespresso Compatible</p>
+          <h1>Signature Blend</h1>
+          <div class="product-rating">
+            <div class="stars">?????</div>
+            <span class="rating-text"><strong>4.9</strong> (128 reviews)</span>
+          </div>
+          <p class="product-description">Our most-loved blend. A perfectly balanced medium roast with notes of dark chocolate, dried fruit, and a silky finish. Sourced from high-altitude farms in Chiang Mai and carefully roasted to bring out the best in every cup.</p>
+
+          <div class="product-price-row">
+            <span class="product-price" id="prod-price">?349</span>
+            <span class="product-price-old">?449</span>
+            <span class="product-save">Save ?100</span>
+          </div>
+
+          <div class="compat-badge">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            100% Compatible with Nespresso Original machines
+          </div>
+
+          <!-- Size -->
+          <div class="variant-group">
+            <div class="variant-label">Size <span id="size-label">Box of 10 capsules</span></div>
+            <div class="variant-options">
+              <button class="variant-btn active" onclick="selectVariant(this, 349, 'Box of 10 capsules')">Box 10<span class="v-price">?349</span></button>
+              <button class="variant-btn" onclick="selectVariant(this, 990, 'Box of 30 capsules')">Box 30<span class="v-price">?990</span></button>
+              <button class="variant-btn" onclick="selectVariant(this, 1890, 'Box of 100 capsules')">Box 100<span class="v-price">?1,890</span></button>
+            </div>
+          </div>
+
+          <!-- Roast -->
+          <div class="variant-group">
+            <div class="variant-label">Roast Profile <span id="roast-label">Medium</span></div>
+            <div class="variant-options">
+              <button class="variant-btn" onclick="selectRoast(this, 'Light')">Light</button>
+              <button class="variant-btn active" onclick="selectRoast(this, 'Medium')">Medium</button>
+              <button class="variant-btn" onclick="selectRoast(this, 'Dark')">Dark</button>
+            </div>
+          </div>
+
+          <!-- Intensity -->
+          <div class="intensity-group">
+            <div class="intensity-label">Intensity</div>
+            <div class="intensity-bar">
+              <div class="intensity-dot" onclick="setIntensity(1,this)"></div>
+              <div class="intensity-dot" onclick="setIntensity(2,this)"></div>
+              <div class="intensity-dot" onclick="setIntensity(3,this)"></div>
+              <div class="intensity-dot active" onclick="setIntensity(4,this)"></div>
+              <div class="intensity-dot active" onclick="setIntensity(5,this)"></div>
+              <div class="intensity-dot active" onclick="setIntensity(6,this)"></div>
+              <div class="intensity-dot" onclick="setIntensity(7,this)"></div>
+              <div class="intensity-dot" onclick="setIntensity(8,this)"></div>
+              <span class="intensity-label-right">Medium-Intense</span>
+            </div>
+          </div>
+
+          <!-- Add to cart -->
+          <div class="add-to-cart">
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty(-1)">&#8722;</button>
+              <input type="text" class="qty-value" id="qty" value="1" readonly>
+              <button class="qty-btn" onclick="changeQty(1)">+</button>
+            </div>
+            <button class="btn-add" onclick="addToCart()">
+              <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              Add to Cart
+            </button>
+            <button class="btn-wishlist" onclick="toggleWishlist(this)">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+
+          <!-- Trust -->
+          <div class="trust-row">
+            <div class="trust-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free delivery Thailand-wide</div>
+            <div class="trust-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Ships within 24 hours</div>
+            <div class="trust-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>30-day satisfaction guarantee</div>
+          </div>
+
+          <hr class="divider">
+
+          <!-- Details accordion -->
+          <div>
+            <div class="detail-item open">
+              <div class="detail-header" onclick="toggleDetail(this)">
+                <h4>Product Details</h4>
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="detail-body">
+                <table class="detail-table">
+                  <tr><td>Brand</td><td>Cafecaps</td></tr>
+                  <tr><td>Compatibility</td><td>Nespresso Original (Vertuo not supported)</td></tr>
+                  <tr><td>Origin</td><td>Chiang Mai, Thailand</td></tr>
+                  <tr><td>Roast Level</td><td>Medium</td></tr>
+                  <tr><td>Intensity</td><td>7/13</td></tr>
+                  <tr><td>Tasting Notes</td><td>Dark chocolate, dried fruit, silky finish</td></tr>
+                  <tr><td>Box Contents</td><td>10 aluminium capsules</td></tr>
+                  <tr><td>Shelf Life</td><td>12 months from roast date</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-header" onclick="toggleDetail(this)">
+                <h4>Shipping & Returns</h4>
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="detail-body">
+                <p>Free delivery on all orders across Thailand. Bangkok: 1–2 business days. Other provinces: 2–4 business days. Ships same day for orders before 2 PM.</p>
+                <p style="margin-top:8px;">Returns accepted within 30 days if capsules are faulty or not as described. Contact info@cafecaps.com to initiate.</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-header" onclick="toggleDetail(this)">
+                <h4>Brewing Guide</h4>
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+              <div class="detail-body">
+                <p><strong>Espresso (40ml):</strong> Use the espresso button.</p>
+                <p style="margin-top:6px;"><strong>Lungo (110ml):</strong> Use the lungo button for a longer, milder extraction.</p>
+                <p style="margin-top:6px;"><strong>Tip:</strong> Run a short water flush through your machine before inserting the capsule for the best crema.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews-section">
+      <div class="reviews-inner">
+        <div class="reviews-header">
+          <h2>What Our Customers Say</h2>
+          <div class="reviews-summary">
+            <div class="reviews-score">4.9</div>
+            <div class="reviews-meta">
+              <div class="stars">?????</div>
+              <p>Based on 128 reviews</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer">
+                <div class="reviewer-avatar">P</div>
+                <div><div class="reviewer-name">Pimchanok K.</div><div class="reviewer-date">January 2024</div></div>
+              </div>
+              <div class="review-verified"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Verified</div>
+            </div>
+            <div class="review-stars">?????</div>
+            <p class="review-body">"Switched from branded capsules to Cafecaps and genuinely can't taste the difference. Better price, same great coffee."</p>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer">
+                <div class="reviewer-avatar">T</div>
+                <div><div class="reviewer-name">Tanapat R.</div><div class="reviewer-date">December 2023</div></div>
+              </div>
+              <div class="review-verified"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Verified</div>
+            </div>
+            <div class="review-stars">?????</div>
+            <p class="review-body">"Box of 100 is incredible value. The dark roast is my favourite — strong, bold, no bitterness."</p>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer">
+                <div class="reviewer-avatar">S</div>
+                <div><div class="reviewer-name">Somsri W.</div><div class="reviewer-date">November 2023</div></div>
+              </div>
+              <div class="review-verified"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Verified</div>
+            </div>
+            <div class="review-stars">?????</div>
+            <p class="review-body">"Delivery was super fast to Chiang Mai — arrived in 2 days. The medium roast is perfect for my morning latte."</p>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="reviewer">
+                <div class="reviewer-avatar">M</div>
+                <div><div class="reviewer-name">Mike D.</div><div class="reviewer-date">October 2023</div></div>
+              </div>
+              <div class="review-verified"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Verified</div>
+            </div>
+            <div class="review-stars">?????</div>
+            <p class="review-body">"I was skeptical about compatible capsules but the Signature Blend shut me up. The chocolate notes are real."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related -->
+    <section class="related-section">
+      <div class="related-header">
+        <h2>You Might Also Like</h2>
+      </div>
+      <div class="related-grid">
+        <a href="#" class="related-card">
+          <div class="related-img"><div class="related-img-inner" style="background:linear-gradient(135deg,#2d1b0e,#5c3a1e)"></div></div>
+          <div class="related-info"><p class="related-name">Espresso Forte</p><p class="related-price">?329 <span>?399</span></p></div>
+        </a>
+        <a href="#" class="related-card">
+          <div class="related-img"><div class="related-img-inner" style="background:linear-gradient(135deg,#8b3a1a,#c45c2a)"></div></div>
+          <div class="related-info"><p class="related-name">Dolce Gusto Roma</p><p class="related-price">?299 <span>?349</span></p></div>
+        </a>
+        <a href="#" class="related-card">
+          <div class="related-img"><div class="related-img-inner" style="background:linear-gradient(135deg,#1a3d2e,#2d6b4a)"></div></div>
+          <div class="related-info"><p class="related-name">Latte Macchiato</p><p class="related-price">?329</p></div>
+        </a>
+        <a href="#" class="related-card">
+          <div class="related-img"><div class="related-img-inner" style="background:linear-gradient(135deg,#4a3020,#8b5a30)"></div></div>
+          <div class="related-info"><p class="related-name">Morning Roast</p><p class="related-price">?319 <span>?379</span></p></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo" onclick="showSection('home'); return false;">Cafe<span>Caps</span></a>
+            <p>Premium compatible coffee capsules. Roasted in Thailand, delivered nationwide.</p>
+            <div class="social-links"><a href="#" class="social-link">IG</a><a href="#" class="social-link">FB</a></div>
+          </div>
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul><li><a href="#" onclick="showSection('product'); return false;">Nespresso</a></li><li><a href="#" onclick="showSection('product'); return false;">Dolce Gusto</a></li><li><a href="#" onclick="showSection('product'); return false;">Bestsellers</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul><li><a href="#" onclick="showSection('contact'); return false;">FAQs</a></li><li><a href="#" onclick="showSection('contact'); return false;">Contact Us</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul><li><a href="#" onclick="showSection('about'); return false;">About Us</a></li><li><a href="#">Disclaimer</a></li></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2024 Cafecaps Ltd.</span>
+          <span class="disclaimer">The Nespresso and Nescafe Dolce Gusto trademarks belong to third parties and are in no way associated with Cafecaps Ltd.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-msg">Added to cart!</span>
+  </div>
+
+  <script>
+    // ─── NAVIGATION ───
+    function showSection(name) {
+      document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+      document.getElementById('section-' + name).classList.add('active');
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.querySelector('.nav-tab[data-section="' + name + '"]').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ─── PRODUCT ───
+    let cartQty = 1;
+    let currentPrice = 349;
+
+    function changeQty(delta) {
+      cartQty = Math.max(1, cartQty + delta);
+      document.getElementById('qty').value = cartQty;
+    }
+
+    function selectVariant(btn, price, label) {
+      btn.parentElement.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentPrice = price;
+      document.getElementById('prod-price').textContent = '\u0e3f' + price.toLocaleString();
+      document.getElementById('size-label').textContent = label;
+    }
+
+    function selectRoast(btn, roast) {
+      btn.parentElement.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('roast-label').textContent = roast;
+    }
+
+    function setIntensity(level, dot) {
+      dot.parentElement.querySelectorAll('.intensity-dot').forEach(d => d.classList.remove('active'));
+      const dots = dot.parentElement.querySelectorAll('.intensity-dot');
+      for (let i = 0; i < level; i++) dots[i].classList.add('active');
+    }
+
+    function toggleDetail(el) { el.parentElement.classList.toggle('open'); }
+    function toggleWishlist(btn) { btn.classList.toggle('active'); }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toast-msg').textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function addToCart() {
+      const cc = document.getElementById('cart-count');
+      cc.textContent = parseInt(cc.textContent) + cartQty;
+      cc.style.transform = 'scale(1.5)';
+      setTimeout(() => cc.style.transform = '', 200);
+      showToast('Added ' + cartQty + ' box(es) to cart!');
+    }
+
+    // ─── CONTACT FORM ───
+    function handleSubmitC(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const success = document.getElementById('alert-success');
+      const error = document.getElementById('alert-error');
+      btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        success.style.display = 'block';
+        error.style.display = 'none';
+        btn.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Sent!';
+        btn.style.background = 'var(--success)';
+        e.target.reset();
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = '<svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message';
+          btn.style.background = '';
+          success.style.display = 'none';
+        }, 3500);
+      }, 1200);
+    }
+
+    // ─── FAQ ───
+    function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+  </script>
+
+</body>
+</html>
