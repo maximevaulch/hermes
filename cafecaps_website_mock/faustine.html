@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faustine Dot de Vaulchier — QA Engineer Certifiée ISTQB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --coffee-dark: #1a0f0a;
+      --coffee-medium: #3d2317;
+      --coffee-light: #6b3d24;
+      --cream: #f5f0e8;
+      --gold: #c8963e;
+      --gold-light: #e8c078;
+      --white: #ffffff;
+      --gray-50: #faf9f7;
+      --gray-100: #f7f5f2;
+      --gray-200: #e8e4df;
+      --gray-300: #d4cfc8;
+      --gray-400: #9a948c;
+      --text: #1a0f0a;
+      --text-muted: #7a6f68;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+
+    .cv-container { max-width: 900px; margin: 0 auto; padding: 48px 24px; }
+
+    /* HEADER */
+    .cv-header { background: var(--coffee-dark); color: var(--cream); padding: 48px; border-radius: 20px; display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; margin-bottom: 32px; position: relative; overflow: hidden; }
+    .cv-header::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .cv-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid var(--gold); box-shadow: 0 8px 32px rgba(0,0,0,0.4); position: relative; z-index: 1; flex-shrink: 0; }
+    .cv-header-text { position: relative; z-index: 1; }
+    .cv-name { font-size: 2.4rem; font-weight: 700; color: var(--cream); margin-bottom: 8px; }
+    .cv-title { font-size: 1.1rem; color: var(--gold); font-weight: 500; margin-bottom: 16px; }
+    .cv-tagline { font-size: 0.95rem; color: rgba(245,240,232,0.7); max-width: 500px; line-height: 1.7; margin-bottom: 24px; }
+    .cv-contact-row { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.85rem; color: rgba(245,240,232,0.8); }
+    .cv-contact-item { display: flex; align-items: center; gap: 6px; }
+    .cv-contact-item a { color: var(--gold-light); text-decoration: none; }
+    .cv-contact-item a:hover { text-decoration: underline; }
+
+    /* CERTIFICATION BADGE */
+    .cv-cert { display: inline-flex; align-items: center; gap: 8px; background: rgba(200,150,62,0.2); border: 1px solid rgba(200,150,62,0.4); color: var(--gold-light); padding: 6px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 500; margin-bottom: 16px; }
+
+    /* SECTIONS */
+    .cv-section { background: var(--white); border-radius: 16px; padding: 32px; margin-bottom: 24px; border: 1px solid var(--gray-200); }
+    .cv-section-title { font-size: 1.3rem; color: var(--coffee-dark); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gold); display: inline-block; }
+
+    /* EXPERIENCE */
+    .exp-item { margin-bottom: 28px; }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+    .exp-role { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--coffee-dark); }
+    .exp-company { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 4px; }
+    .exp-period { font-size: 0.82rem; color: var(--gold); font-weight: 500; white-space: nowrap; }
+    .exp-mission { font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-bottom: 10px; }
+    .exp-tasks { list-style: none; }
+    .exp-tasks li { font-size: 0.88rem; color: var(--text); padding-left: 18px; position: relative; margin-bottom: 6px; line-height: 1.5; }
+    .exp-tasks li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+
+    /* SKILLS GRID */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .skill-group h4 { font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 10px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .skill-tag { background: var(--gray-100); border: 1px solid var(--gray-200); color: var(--text); padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; }
+    .skill-tag.qa { background: rgba(200,150,62,0.1); border-color: rgba(200,150,62,0.3); color: var(--coffee-dark); }
+
+    /* LANGUAGES */
+    .lang-grid { display: flex; gap: 32px; }
+    .lang-item { display: flex; align-items: center; gap: 10px; }
+    .lang-name { font-weight: 500; font-size: 0.9rem; }
+    .lang-level { font-size: 0.82rem; color: var(--text-muted); }
+    .lang-level.native { color: var(--gold); font-weight: 500; }
+
+    /* EDUCATION */
+    .edu-item { margin-bottom: 20px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-diploma { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--coffee-dark); }
+    .edu-school { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 4px; }
+    .edu-year { font-size: 0.82rem; color: var(--gold); font-weight: 500; }
+
+    /* EXPAT */
+    .expat-grid { display: flex; gap: 24px; flex-wrap: wrap; }
+    .expat-item { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 12px; padding: 14px 20px; display: flex; align-items: center; gap: 10px; }
+    .expat-flag { font-size: 1.3rem; }
+    .expat-text { font-size: 0.85rem; }
+    .expat-city { font-weight: 500; color: var(--coffee-dark); }
+    .expat-years { color: var(--text-muted); font-size: 0.78rem; }
+
+    /* SOCIAL */
+    .social-row { display: flex; gap: 16px; align-items: center; }
+    .social-link { display: inline-flex; align-items: center; gap: 6px; color: var(--coffee-dark); text-decoration: none; font-size: 0.88rem; padding: 8px 16px; background: var(--gray-100); border-radius: 50px; border: 1px solid var(--gray-200); transition: all 0.2s; }
+    .social-link:hover { background: var(--gold); color: var(--white); border-color: var(--gold); }
+
+    /* FOOTER CTA */
+    .cv-footer { background: linear-gradient(135deg, var(--coffee-dark), var(--coffee-medium)); border-radius: 16px; padding: 40px; text-align: center; color: var(--cream); }
+    .cv-footer h2 { font-size: 1.6rem; color: var(--cream); margin-bottom: 10px; }
+    .cv-footer p { color: rgba(245,240,232,0.7); margin-bottom: 24px; font-size: 0.95rem; }
+    .cv-footer a { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--coffee-dark); padding: 13px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+    .cv-footer a:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,150,62,0.4); }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .cv-header { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+      .cv-contact-row { justify-content: center; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .lang-grid { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+  <!-- HEADER -->
+  <header class="cv-header">
+    <img src="faustine.jpg" alt="Faustine Dot de Vaulchier" class="cv-photo">
+    <div class="cv-header-text">
+      <div class="cv-cert">Certifiée ISTQB</div>
+      <h1 class="cv-name">Faustine Dot de Vaulchier</h1>
+      <p class="cv-title">QA Engineer Freelance</p>
+      <p class="cv-tagline">Consultante QA spécialisée dans les environnements complexes. J'accompagne les équipes produit et techniques dans la sécurisation des releases en assurant la qualité fonctionnelle des applications et la fiabilité des livraisons dans des contextes multi-équipes et multi-environnements.</p>
+      <div class="cv-contact-row">
+        <div class="cv-contact-item">
+          <span>📧</span><a href="mailto:dot.faustine@gmail.com">dot.faustine@gmail.com</a>
+        </div>
+        <div class="cv-contact-item">
+          <span>📱</span><a href="tel:+33658473935">06 58 47 39 35</a>
+        </div>
+        <div class="cv-contact-item">
+          <span>📍</span> Bangkok, Thaïlande
+        </div>
+        <div class="cv-contact-item">
+          <span>🚗</span> Permis B
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- EXPERIENCE -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Expériences Professionnelles</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">QA Manual — Mission Supply Chain</div>
+          <div class="exp-company">Christian Dior Couture, Paris</div>
+        </div>
+        <div class="exp-period">Janvier 2023 — Aujourd'hui</div>
+      </div>
+      <div class="exp-mission">Supplychain — Outils de Sales Planning, Pricing et Merchandising (Anaplan)</div>
+      <ul class="exp-tasks">
+        <li>Cycle de développement en sprint (Méthodologie Scrumban)</li>
+        <li>Participation aux cérémonies Agiles (PI, daily's, démo, rétro, sprint planning, review, refinement)</li>
+        <li>Analyse des spécifications fonctionnelles détaillées</li>
+        <li>Assistance aux PO's dans la rédaction des critères d'acceptance</li>
+        <li>Élaboration de plans de tests et intégration des tickets d'exécution</li>
+        <li>Rédaction des tests cases sur Jira / X-Ray</li>
+        <li>Exécution des releases sur environnements dev, training et preprod</li>
+        <li>Tests E2E et TNR pour la validation des évolutions</li>
+        <li>Gestion et suivi des anomalies avec les développeurs</li>
+        <li>Animation de démos auprès des parties prenantes</li>
+        <li>Préparation et encadrement des UAT pour validation KeyUsers</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">QA Manual — Mission Web & Mobile</div>
+          <div class="exp-company">Cafécaps Thailand, Paris</div>
+        </div>
+        <div class="exp-period">2022 — 2023</div>
+      </div>
+      <div class="exp-mission">Assurer et améliorer la qualité de l'application web & mobile</div>
+      <ul class="exp-tasks">
+        <li>Participation et animation des cérémonies agiles</li>
+        <li>Analyse des spécifications fonctionnelles détaillées</li>
+        <li>Contribution à la définition de la stratégie de test</li>
+        <li>Conception de cas de tests et préparation des jeux de données</li>
+        <li>Exécution des campagnes de test et TNR</li>
+        <li>Identification et remontée des anomalies</li>
+        <li>Automatisation de tests bout en bout via Cypress</li>
+        <li>Rédaction du PV de recette</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Senior Project Manager & QA</div>
+          <div class="exp-company">Le Nouveau Belier, Neuilly-sur-Seine</div>
+        </div>
+        <div class="exp-period">2017 — 2021</div>
+      </div>
+      <div class="exp-mission">Gestion de projet de communication</div>
+      <ul class="exp-tasks">
+        <li>Garant du déploiement opérationnel de campagnes 360° : brief, suivi de création et production, planification, suivi financier</li>
+        <li>Expression du besoin client sous forme de spécifications fonctionnelles (en US)</li>
+        <li>Participations stratégiques, recommandations et présentations clients</li>
+        <li>Rédaction et exécution des tests</li>
+        <li>Remontée et suivi d'anomalies</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">UX Designer</div>
+          <div class="exp-company">E-volution, Levallois-Perret</div>
+        </div>
+        <div class="exp-period">2015 — 2016</div>
+      </div>
+      <div class="exp-mission">Créer l'expérience client la plus agréable possible</div>
+      <ul class="exp-tasks">
+        <li>Conception créative de maquettes (jeux concours, sites, pop up)</li>
+        <li>Responsable de la qualité et de l'ergonomie des IHM</li>
+        <li>Étroite collaboration avec l'équipe de développement</li>
+        <li>Suivi des développements et remontée/suivi d'anomalies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Compétences</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h4>Outils Informatiques</h4>
+        <div class="skill-tags">
+          <span class="skill-tag qa">Jira</span>
+          <span class="skill-tag qa">Xray</span>
+          <span class="skill-tag qa">Anaplan</span>
+          <span class="skill-tag qa">BrowserStack</span>
+          <span class="skill-tag qa">Postman</span>
+          <span class="skill-tag">Cypress</span>
+          <span class="skill-tag">Maildrop</span>
+          <span class="skill-tag">Pack Office</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Langages & Tech</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Gherkin</span>
+          <span class="skill-tag">HTML / CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Méthodologie</h4>
+        <div class="skill-tags">
+          <span class="skill-tag qa">Kanban</span>
+          <span class="skill-tag qa">Scrum</span>
+          <span class="skill-tag qa">Agilité</span>
+          <span class="skill-tag qa">BDD</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Langues</h2>
+    <div class="lang-grid">
+      <div class="lang-item">
+        <div>
+          <div class="lang-name">Français</div>
+          <div class="lang-level native">Langue maternelle</div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <div>
+          <div class="lang-name">Anglais</div>
+          <div class="lang-level">Courant</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Diplômes & Formations</h2>
+    <div class="edu-item">
+      <div class="edu-diploma">Testeur Logiciel</div>
+      <div class="edu-school">3i School, Cergy</div>
+      <div class="edu-year">2022</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-diploma">Master 2 Marketing Publicité Marque et Innovation</div>
+      <div class="edu-school">ISCOM — Institut supérieur de communication et de publicité, Paris</div>
+      <div class="edu-year">2016</div>
+    </div>
+  </section>
+
+  <!-- EXPAT -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Expatriations</h2>
+    <div class="expat-grid">
+      <div class="expat-item">
+        <span class="expat-flag">🇹🇭</span>
+        <div class="expat-text">
+          <div class="expat-city">Bangkok, Thaïlande</div>
+          <div class="expat-years">2005 — 2011 (6 ans)</div>
+        </div>
+      </div>
+      <div class="expat-item">
+        <span class="expat-flag">🇦🇪</span>
+        <div class="expat-text">
+          <div class="expat-city">Dubaï, Émirats Arabes Unis</div>
+          <div class="expat-years">2002 — 2004 (3 ans)</div>
+        </div>
+      </div>
+      <div class="expat-item">
+        <span class="expat-flag">🇭🇺</span>
+        <div class="expat-text">
+          <div class="expat-city">Budapest, Hongrie</div>
+          <div class="expat-years">1999 — 2001 (3 ans)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="cv-section">
+    <h2 class="cv-section-title">Réseaux Sociaux</h2>
+    <div class="social-row">
+      <a href="https://www.linkedin.com/in/faustinevaulch" target="_blank" class="social-link">🔗 LinkedIn</a>
+      <a href="mailto:dot.faustine@gmail.com" class="social-link">📧 dot.faustine@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <footer class="cv-footer">
+    <h2>Besoin d'une QA de confiance ?</h2>
+    <p>Disponible pour des missions freelance, je m'adapte à vos environnements complexes.</p>
+    <a href="mailto:dot.faustine@gmail.com">📧 Contacter Faustine</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
