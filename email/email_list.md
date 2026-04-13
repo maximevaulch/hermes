@@ -22,6 +22,12 @@
   - Language: FR
   - Context: Maxime's brother. French speaker.
 
+- **Marie**
+  - Email: marielydiedubois@gmail.com
+  - Address: informal
+  - Language: EN
+  - Context: Maxime's wife.
+
 ## Business
 
 - **Maxime (self)**
