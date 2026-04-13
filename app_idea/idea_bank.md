@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #3** — 2026-04-14 at 06:30 BKT
+
+📱 App Idea: Habit Brick
+
+Build habits one brick at a time. Stack daily tasks like Tetris blocks — they fall and lock in place.
+
+Features:
+  • Bricks of different shapes = habits of different durations (5min, 15min, 30min). Complete them before the stack fills the screen.
+  • Weekly wallpaper generation showing your completed bricks as pixel art.
+  • Streak protection: earn 'shield' bricks by completing extra habits.
+
+💰 Pro version for unlimited bricks + cloud sync. Free tier capped at 3 habits/day.
+---
 **Idea #1** — 2026-04-13 at 18:30 BKT
 
 📱 App Idea: Voice-only D&D
