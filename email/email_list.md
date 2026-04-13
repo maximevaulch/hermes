@@ -2,6 +2,12 @@
 
 ## Family
 
+- **Faustine (Sister)**
+  - Email: dot.faustine@gmail.com
+  - Address: informal
+  - Language: FR
+  - Context: Maxime's sister. French speaker, informal relation.
+
 - **Guillaume (Dad)**
   - Email: vaulch@gmail.com
   - Address: first_name
