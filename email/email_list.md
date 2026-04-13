@@ -1,11 +1,31 @@
 # Email List
 
 ## Family
-- Dad (Guillaume) | vaulch@gmail.com | first_name | FR
-- Mum | TBD | TBD | TBD
+
+- **Guillaume (Dad)**
+  - Email: vaulch@gmail.com
+  - Address: first_name
+  - Language: FR
+  - Context: Maxime's dad, also his boss at Cafecaps. They work together and talk every day. Guillaume already knows what's going on, so no need to over-explain.
+
+- **Mum**
+  - Email: TBD
+  - Address: TBD
+  - Language: TBD
+  - Context:
 
 ## Friends
-- Arthur | arthurvaulch@gmail.com | informal | FR
+
+- **Arthur**
+  - Email: arthurvaulch@gmail.com
+  - Address: informal
+  - Language: FR
+  - Context: Maxime's brother. French speaker.
 
 ## Business
-- Cafecaps | maxime@cafecaps.com | first_name | EN
+
+- **Maxime (self)**
+  - Email: maxime@cafecaps.com
+  - Address: first_name
+  - Language: EN
+  - Context: This is Maxime's own email. When emailing himself, write direct notes/reminders in first person, short and practical.
