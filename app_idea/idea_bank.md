@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #5** — 2026-04-14 at 18:31 BKT
+
+📱 App Idea: Expiry Shadow
+
+Scan your fridge once. App tracks what expires soonest and nags you before food goes bad.
+
+Features:
+  • Camera to snapshot groceries, manual date entry fallback.
+  • Countdown bars for each item — red when today/tomorrow, yellow within 3 days.
+  • Recipe suggestions using items expiring within 48h.
+
+💰 Meal plan subscription + 'Zero Waste' achievement badges for social sharing.
+---
 **Idea #4** — 2026-04-14 at 12:31 BKT
 
 📱 App Idea: Random Skill Roulette
