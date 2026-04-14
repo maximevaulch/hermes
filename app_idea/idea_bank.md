@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #6** — 2026-04-15 at 06:30 BKT
+
+📱 App Idea: Random Food Generator
+
+Can't decide where to eat? Feed it a budget, cuisine type, and distance. It spins and picks.
+
+Features:
+  • Wheel-of-fortune style animation that lands on a random restaurant from Google Maps results.
+  • Filter by cuisine, price level, rating, open now.
+  • One-tap call + directions to chosen restaurant.
+
+💰 Featured restaurant sponsored slots + affiliate links to delivery apps.
+---
 **Idea #5** — 2026-04-14 at 18:31 BKT
 
 📱 App Idea: Expiry Shadow
