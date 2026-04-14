@@ -34,6 +34,12 @@
   - Language: EN
   - Context: Maxime's wife.
 
+- **Joel**
+  - Email: joel@17six.com.au
+  - Address: informal
+  - Language: EN
+  - Context: The guy who makes you laugh. Keep it light, crack jokes, don't take anything seriously when writing to him.
+
 ## Business
 
 - **Maxime (self)**
