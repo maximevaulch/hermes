@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #4** — 2026-04-14 at 12:31 BKT
+
+📱 App Idea: Random Skill Roulette
+
+Can't decide what to learn? It picks a random micro-skill: a specific Excel trick, a guitar chord, a magic card move.
+
+Features:
+  • Daily micro-skill card: short text + YouTube video embed + practice timer.
+  • Skill tree view showing which you've tried, practiced, mastered.
+  • Community submissions for new micro-skills.
+
+💰 Premium skill packs from experts + skill certification badges.
+---
 **Idea #3** — 2026-04-14 at 06:30 BKT
 
 📱 App Idea: Habit Brick
