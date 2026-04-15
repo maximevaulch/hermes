@@ -1,6 +1,21 @@
 # Idea Bank
 
 ---
+**Idea #11** — 2026-04-16 at 06:31 BKT
+
+📱 App Idea: Peek
+
+A pic gets shared — but nobody can see it clearly yet. Friends reactions (likes, comments, shares) gradually sharpen it into focus. The more love it gets, the more it reveals.
+
+Features:
+  • Blur-to-reveal mechanic: post a photo at 80% blur. Each reaction chips away the blur — fully unblurred at ~50 reactions.
+  • Friend activity feed: watch photos in your circle slowly come into focus in real-time.
+  • Timed reveal: photos auto-unblur after 24h regardless of reactions, or set a custom unlock countdown.
+
+💰 Pro: longer photo lifespan + advanced blur patterns + unblur analytics (which reaction types work fastest) + "Boost" button to accelerate one photo's reveal.
+
+---
+
 **Idea #10** — 2026-04-15 at 19:12 BKT
 
 📱 App Idea: Reciprocity
@@ -133,3 +148,4 @@ Features:
 
 💰 Pro: unlimited sound mixing + sleep history export.
 ---
+
