@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #7** — 2026-04-15 at 12:31 BKT
+
+📱 App Idea: Mood Palette
+
+Draw or just tap to log how you feel. App tracks your emotional patterns as a generative art piece.
+
+Features:
+  • Tap a color that matches your mood → saved to a growing canvas.
+  • Weekly mood heatmap + pattern recognition (e.g., 'You tend to feel blue on Mondays').
+  • Export your mood art as shareable wallpapers.
+
+💰 Art packs (color palettes from artists) + print-on-demand canvas.
+---
 **Idea #6** — 2026-04-15 at 06:30 BKT
 
 📱 App Idea: Random Food Generator
