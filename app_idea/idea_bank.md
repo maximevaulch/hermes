@@ -1,6 +1,21 @@
 # Idea Bank
 
 ---
+**Idea #10** — 2026-04-15 at 19:12 BKT
+
+📱 App Idea: Reciprocity
+
+You owe the universe a kindness. Reciprocity tracks your give/receive balance and gently nags you when you're in karma debt.
+
+Features:
+  • Karma balance: log a "give" (hold door, pay it forward, compliment) or "receive" (someone helped you) with one tap. Balance updates live.
+  • Gentle nudge system: if balance dips negative, a soft daily reminder fires — "Time to spread some good vibes."
+  • Monthly karma report: animated circle chart showing your give/receive ratio + streak of consecutive "positive balance" days.
+  • Optional: link 1–2 friends to silently compare karma scores (no leaderboard pressure, just awareness).
+
+💰 Premium: unlimited history + karma report PDF export + "Random Act of Kindness" generator that suggests nearby opportunities (e.g., buy coffee for the next person).
+
+---
 **Idea #9** — 2026-04-15 at 19:08 BKT
 
 📱 App Idea: Locale Loop
