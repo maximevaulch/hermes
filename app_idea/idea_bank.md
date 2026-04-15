@@ -1,6 +1,19 @@
 # Idea Bank
 
 ---
+**Idea #9** — 2026-04-15 at 19:08 BKT
+
+📱 App Idea: Locale Loop
+
+Your friends are always where you need them — automatically. Set it and forget it, your location circles sync quietly in the background.
+
+Features:
+  • Auto-location sharing: loop of 2–5 close friends who share rough location (neighborhood-level, not pin-drop) on a configurable schedule.
+  • Smart status: "Available", "Busy", "Going out", "Home" — auto-suggested based on location + time (e.g., at a bar at 11pm → "Going out").
+  • One-tap meetup: tap a friend's bubble → see their neighborhood on mini-map → send a "Wanna hang?" ping that disappears after 30 min.
+
+💰 Premium: unlimited loops + location history heatmap + integration with calendar to auto-block slots when you're "Busy".
+---
 **Idea #8** — 2026-04-15 at 18:32 BKT
 
 📱 App Idea: Nap Roulette
