@@ -149,3 +149,16 @@ Features:
 💰 Pro: unlimited sound mixing + sleep history export.
 ---
 
+---
+**Idea #11** — 2026-04-16 at 12:30 BKT
+
+📱 App Idea: Tray
+
+Your unread messages don't pile up in silence anymore — they stack visually in your notification tray, and you watch them drain in real-time.
+
+Features:
+  • Tray stack: shows a vertical stack of message icons in the app's persistent home screen widget — each unread thread is a "tray" block. As you read, blocks animate out.
+  • Drain mode: start a "drain session" — the app plays a satisfying liquid-drain animation as you clear threads one by one.
+  • Avoidance score: tracks which chats you've left on read the longest, surfacing your "avoidance heatmap" at week's end.
+
+💰 Pro: avoidance analytics + "drain streak" badges + custom tray themes (glass, neon, wood).
