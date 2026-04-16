@@ -1,6 +1,20 @@
 # Idea Bank
 
 ---
+**Idea #13** — 2026-04-16 at 18:30 BKT
+
+📱 App Idea: Favor IOU
+
+You're always Spotifying your friends for small things. Favor IOU tracks who owes what — and nags them until they pay up.
+
+Features:
+ • IOU ledger: log a "you owe" or "they owe" with one tap and a quick note. Running balance per friend always visible.
+ • Gentle nag system: if a favor goes unpaid beyond your set deadline, daily pings fire until it's settled — never aggressive, just "still here 👀"
+ • Favor karma score: per-friend repayment reliability % shown on their card. High scorers get a gold star badge.
+
+💰 Pro: unlimited history + custom nag tones + "payback suggester" that proposes a specific repayment action (e.g., "Buy them a coffee") based on past favors.
+---
+
 **Idea #12** — 2026-04-16 at 12:30 BKT
 
 📱 App Idea: Tray
@@ -44,6 +58,7 @@ Features:
 💰 Premium: unlimited history + karma report PDF export + "Random Act of Kindness" generator that suggests nearby opportunities (e.g., buy coffee for the next person).
 
 ---
+
 **Idea #9** — 2026-04-15 at 19:08 BKT
 
 📱 App Idea: Locale Loop
@@ -57,6 +72,7 @@ Features:
 
 💰 Premium: unlimited loops + location history heatmap + integration with calendar to auto-block slots when you're "Busy".
 ---
+
 **Idea #8** — 2026-04-15 at 18:32 BKT
 
 📱 App Idea: Nap Roulette
@@ -70,6 +86,7 @@ Features:
 
 💰 Pro: unlimited sound mixing + sleep history export.
 ---
+
 **Idea #7** — 2026-04-15 at 12:31 BKT
 
 📱 App Idea: Mood Palette
@@ -83,6 +100,7 @@ Features:
 
 💰 Art packs (color palettes from artists) + print-on-demand canvas.
 ---
+
 **Idea #6** — 2026-04-15 at 06:30 BKT
 
 📱 App Idea: Random Food Generator
@@ -96,6 +114,7 @@ Features:
 
 💰 Featured restaurant sponsored slots + affiliate links to delivery apps.
 ---
+
 **Idea #5** — 2026-04-14 at 18:31 BKT
 
 📱 App Idea: Expiry Shadow
@@ -109,6 +128,7 @@ Features:
 
 💰 Meal plan subscription + 'Zero Waste' achievement badges for social sharing.
 ---
+
 **Idea #4** — 2026-04-14 at 12:31 BKT
 
 📱 App Idea: Random Skill Roulette
@@ -122,6 +142,7 @@ Features:
 
 💰 Premium skill packs from experts + skill certification badges.
 ---
+
 **Idea #3** — 2026-04-14 at 06:30 BKT
 
 📱 App Idea: Habit Brick
@@ -135,6 +156,7 @@ Features:
 
 💰 Pro version for unlimited bricks + cloud sync. Free tier capped at 3 habits/day.
 ---
+
 **Idea #1** — 2026-04-13 at 18:30 BKT
 
 📱 App Idea: Voice-only D&D
@@ -148,6 +170,7 @@ Features:
 
 💰 Expansion packs: different genres (horror, sci-fi, romance). Premium voices.
 ---
+
 **Idea #2** — 2026-04-13 at 12:30 BKT
 
 📱 App Idea: Nap Roulette
@@ -161,3 +184,4 @@ Features:
 
 💰 Pro: unlimited sound mixing + sleep history export.
 ---
+
