@@ -1,6 +1,26 @@
 # Idea Bank
 
 ---
+
+**Idea #14** — 2026-04-17 at 06:30 BKT
+
+📱 App Idea: Pulse
+
+Your phone's battery bar tells you it's at 47%. Pulse tells you what 47% *means* — how many more minutes of Spotify, YouTube, or calls you have left.
+
+[pitch]
+
+估算剩余电量还能撑多久，换算成你常用App的实际使用分钟数，而不是抽象的百分比。
+
+Features:
+ • Real-time app-time estimate: shows "Spotify: ~3h 20m left" alongside the stock battery % — calculated from your actual usage patterns this week.
+ • Drain forecast: if you keep using at current pace, when will you hit 0%? Shows a projected "death time" updated live.
+ • Power-preservation mode: toggle a mode that predicts whether your battery will survive your commute / dinner / night out — surfaces a warning if it's trending red.
+
+💰 Pro: unlimited usage history + custom app priorities + "Survival Report" weekly digest showing your battery anxiety peaks and the exact apps draining you most.
+
+---
+
 **Idea #13** — 2026-04-16 at 18:30 BKT
 
 📱 App Idea: Favor IOU
@@ -13,6 +33,7 @@ Features:
  • Favor karma score: per-friend repayment reliability % shown on their card. High scorers get a gold star badge.
 
 💰 Pro: unlimited history + custom nag tones + "payback suggester" that proposes a specific repayment action (e.g., "Buy them a coffee") based on past favors.
+
 ---
 
 **Idea #12** — 2026-04-16 at 12:30 BKT
@@ -27,6 +48,7 @@ Features:
  • Avoidance score: tracks which chats you've left on read the longest, surfacing your "avoidance heatmap" at week's end.
 
 💰 Pro: avoidance analytics + "drain streak" badges + custom tray themes (glass, neon, wood).
+
 ---
 
 **Idea #11** — 2026-04-16 at 06:31 BKT
@@ -41,6 +63,7 @@ Features:
  • Timed reveal: photos auto-unblur after 24h regardless of reactions, or set a custom unlock countdown.
 
 💰 Pro: longer photo lifespan + advanced blur patterns + unblur analytics (which reaction types work fastest) + "Boost" button to accelerate one photo's reveal.
+
 ---
 
 **Idea #10** — 2026-04-15 at 19:12 BKT
@@ -71,6 +94,7 @@ Features:
  • One-tap meetup: tap a friend's bubble → see their neighborhood on mini-map → send a "Wanna hang?" ping that disappears after 30 min.
 
 💰 Premium: unlimited loops + location history heatmap + integration with calendar to auto-block slots when you're "Busy".
+
 ---
 
 **Idea #8** — 2026-04-15 at 18:32 BKT
@@ -85,6 +109,7 @@ Features:
  • Sleep score based on duration vs target and consistency.
 
 💰 Pro: unlimited sound mixing + sleep history export.
+
 ---
 
 **Idea #7** — 2026-04-15 at 12:31 BKT
@@ -99,6 +124,7 @@ Features:
  • Export your mood art as shareable wallpapers.
 
 💰 Art packs (color palettes from artists) + print-on-demand canvas.
+
 ---
 
 **Idea #6** — 2026-04-15 at 06:30 BKT
@@ -113,6 +139,7 @@ Features:
  • One-tap call + directions to chosen restaurant.
 
 💰 Featured restaurant sponsored slots + affiliate links to delivery apps.
+
 ---
 
 **Idea #5** — 2026-04-14 at 18:31 BKT
@@ -127,6 +154,7 @@ Features:
  • Recipe suggestions using items expiring within 48h.
 
 💰 Meal plan subscription + 'Zero Waste' achievement badges for social sharing.
+
 ---
 
 **Idea #4** — 2026-04-14 at 12:31 BKT
@@ -141,6 +169,7 @@ Features:
  • Community submissions for new micro-skills.
 
 💰 Premium skill packs from experts + skill certification badges.
+
 ---
 
 **Idea #3** — 2026-04-14 at 06:30 BKT
@@ -155,6 +184,7 @@ Features:
  • Streak protection: earn 'shield' bricks by completing extra habits.
 
 💰 Pro version for unlimited bricks + cloud sync. Free tier capped at 3 habits/day.
+
 ---
 
 **Idea #1** — 2026-04-13 at 18:30 BKT
@@ -169,6 +199,7 @@ Features:
  • Auto-adventure mode: DM narrates, character acts on auto-pilot based on your class build.
 
 💰 Expansion packs: different genres (horror, sci-fi, romance). Premium voices.
+
 ---
 
 **Idea #2** — 2026-04-13 at 12:30 BKT
@@ -183,5 +214,5 @@ Features:
  • Sleep score based on duration vs target and consistency.
 
 💰 Pro: unlimited sound mixing + sleep history export.
----
 
+---
