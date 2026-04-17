@@ -2,7 +2,28 @@
 
 ---
 
-**Idea #17** — 2026-04-17 at 18:30 BKT
+**Idea #18** — 2026-04-18 at 06:30 BKT
+
+📱 App Idea: Anchor
+
+Your phone is the distraction. Turn it face-down to become focused.
+
+[pitch]
+
+Anchor flips the注意力 problem: instead of reminding you to put down your phone, it detects when you physically turn it face-down — and rewards that moment. A minimalist focus timer that treats your phone's orientation as the input, turning a gesture into a habit loop.
+
+Features:
+  • **Face-down detection**: accelerometer triggers "focus mode" the moment you flip your phone — no buttons, no friction. A subtle ripple animation confirms the session has begun.
+  • **Focus score**: tracks how long you stay face-down. Score = % of session time phone stayed flat + bonus for hitting your target duration. Shown as a circular progress ring filling in real-time.
+  • **Distraction log**: every time you flip back over, Anchor silently logs it. At session end, see your "distraction map" — the timestamps when focus broke, and how long each break lasted.
+  • **Streak tiles**: complete a session → earn an anchor tile. Tiles stack into a weekly "harbor view" mosaic — visual proof of your focus consistency. Miss a day and the chain breaks visually.
+  • **Weekly report**: every Sunday, Anchor surfaces your best focus day, average score, total focus hours, and biggest distraction culprit (time of day? day of week?).
+
+💰 Pro: unlimited session history + weekly email digest + "deep work" mode (no breaks allowed, session voided if flipped) + export focus report as shareable image. Free: 3 sessions/day.
+
+---
+
+**Idea #17**
 
 📱 App Idea: Echo
 
