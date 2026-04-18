@@ -2,7 +2,6 @@
 
 ---
 
-**Idea #19** — 2026-04-18 at 12:31 BKT
 **Idea #20** — 2026-04-18 at 18:30 BKT
 
 📱 App Idea: Thammasook
@@ -24,6 +23,11 @@ Features:
   • **Smart reminders**: Set recurring daily reminders (morning shrine, evening reflection) or one-time alerts for upcoming observance days. Option to remind you to make merit before a holy day rather than on it.
 
 💰 Free — full Buddhist calendar, temple finder, basic merit journal (30 entries/month), 3 festival deep-dives/week. Pro (฿149/year) — unlimited journal entries, all festival deep-dives unlocked, practice streak analytics, "nearest uposatha day" widget, export merit record as shareable card.
+
+---
+
+**Idea #19** — 2026-04-18 at 12:31 BKT
+
 📱 App Idea: Dock
 
 Your phone is already on your nightstand. Dock turns it into a sleep sentinel — no wearable required.
@@ -40,6 +44,8 @@ Features:
   • **Consistency score**: similar to fitness step streaks — earn a flame for consecutive nights within ±30min of your target bedtime. Break the rhythm and the flame resets visually.
 
 💰 Pro: unlimited history + snore/noise analytics + "best sleep window" recommendation based on your patterns + export sleep report. Free: 3 nights/week tracked, basic consistency score.
+
+---
 
 **Idea #18** — 2026-04-18 at 12:31 BKT
 
