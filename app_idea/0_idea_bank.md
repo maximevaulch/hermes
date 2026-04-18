@@ -2,7 +2,24 @@
 
 ---
 
-**Idea #18** — 2026-04-18 at 06:30 BKT
+**Idea #19** — 2026-04-18 at 12:31 BKT
+
+📱 App Idea: Dock
+
+Your phone is already on your nightstand. Dock turns it into a sleep sentinel — no wearable required.
+
+[pitch]
+
+Most sleep apps demand you wear something or press a button before bed. Dock takes a different approach: your phone sits still on the nightstand, and that's exactly the data. It uses the accelerometer to detect when you put it down and stop moving — and from that moment, it listens to the room through the microphone (occasionally, not continuously) to log noise disturbances, snore events, and when you finally picked it back up. A sleep score and a weekly rhythm chart show how consistent your sleep window actually is.
+
+Features:
+  • **Dock-and-forget**: place phone face-down on a flat surface. Dock detects the stillness via accelerometer and enters "sleep mode" automatically — no button press.
+  • **Sleep window tracker**: logs when stillness began and when motion resumed. Calculates total sleep duration vs. your target. Shows a daily "sleep bar" filling toward your goal.
+  • **Ambient noise log**: occasionally samples microphone levels during the night to flag disturbances (loud noise events, partner snoring, traffic). No continuous recording — just level timestamps.
+  • **Sleep rhythm chart**: weekly heatmap showing your sleep-onset time and wake time as dots on a clock face — reveals patterns like "you consistently wake at 6:47am even without an alarm."
+  • **Consistency score**: similar to fitness step streaks — earn a flame for consecutive nights within ±30min of your target bedtime. Break the rhythm and the flame resets visually.
+
+💰 Pro: unlimited history + snore/noise analytics + "best sleep window" recommendation based on your patterns + export sleep report. Free: 3 nights/week tracked, basic consistency score.
 
 📱 App Idea: Anchor
 
