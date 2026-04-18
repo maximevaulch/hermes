@@ -21,6 +21,8 @@ Features:
 
 💰 Pro: unlimited history + snore/noise analytics + "best sleep window" recommendation based on your patterns + export sleep report. Free: 3 nights/week tracked, basic consistency score.
 
+**Idea #18** — 2026-04-18 at 12:31 BKT
+
 📱 App Idea: Anchor
 
 Your phone is the distraction. Turn it face-down to become focused.
