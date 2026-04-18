@@ -2,6 +2,29 @@
 
 ---
 
+---
+
+**Idea #21** — 2026-04-19 at 06:31 BKT
+
+📱 App Idea: Jao
+
+Your condo building, finally in your pocket — shared amenities, split bills, and neighbor connections.
+
+[pitch]
+
+Bangkok's middle class lives overwhelmingly in condominiums — over 1,000 buildings in the city alone, each with pools, gyms, co-working spaces, and lounges that residents share but rarely coordinate. Right now, booking the gym at 7pm means either showing up and hoping, or wrestling with a clunky web portal designed in 2012. Expense splitting within a household or among roommates is still done via screenshots of LINE group chats. Jao fixes that — it's the resident app that building management never built, but residents actually want.
+
+The user is a Bangkok condo resident aged 25–45 who pays maintenance fees every month and actually wants to use the amenities they're already paying for. They share groceries, utilities, or streaming subscriptions with roommates or a partner. They want to know if the pool is empty before heading down, split the electricity bill without awkwardness, and maybe discover that their neighbor two floors up also bikes on weekends.
+
+Features:
+  • **Amenity booking with live availability**: Reserve the pool lane, gym, sauna, or co-working room from the app. A color-coded heatmap shows peak hours so you can find empty windows — like a fitness studio class finder, but for your building's own facilities. Recurring weekly bookings supported.
+  • **Household expense splitter**: Log shared expenses — utilities, groceries, internet, condo maintenance fees — and settle up with auto-generated QR payment requests. History is searchable and exports to a simple monthly breakdown.
+  • **Building bulletin + resident board**: Management announcements in a proper feed (not buried in email). Plus an optional resident board — verified by unit number — for borrowing a drill, finding a pet-sitter, or posting community events. No anonymous trolls because units are confirmed at signup.
+  • **Visitor pass + delivery log**: Share one-time visitor QR codes with guests. All deliveries are logged in a shared inbox so roommates know who to grab before it sits in the lobby for three days.
+  • **Reserve-before-you-go**: Booking the pool lane triggers a "I'm heading down now" nudge to your unit chat — or you can go solo. The app walks the line between social and practical.
+
+💰 Free — amenity booking (3 active reservations), 10 expense entries/month, basic bulletin. Pro (฿99/month) — unlimited reservations, unlimited expense splits, delivery log with 30-day history, visitor QR codes, export household summary as PDF.
+
 **Idea #20** — 2026-04-18 at 18:30 BKT
 
 📱 App Idea: Thammasook
