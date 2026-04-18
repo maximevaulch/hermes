@@ -3,7 +3,27 @@
 ---
 
 **Idea #19** — 2026-04-18 at 12:31 BKT
+**Idea #20** — 2026-04-18 at 18:30 BKT
 
+📱 App Idea: Thammasook
+
+Your Buddhist calendar, merit guide, and temple compass — all in one.
+
+[pitch]
+
+Thailand runs on a dual calendar: the Gregorian for government and business, but the Buddhist lunar calendar for the spiritual life that actually structures most Thai people's year. Buddhist holidays, uposatha days, temple festivals, and merit-making seasons come and go according to a calendar most people have to manually check or just... miss. Thammasook bridges that gap — it knows what's happening spiritually in Thailand this week, points you to the nearest place to participate, and keeps a personal log of your own dharma practice so the habit compounds.
+
+The user is a working Thai person who wants to make merit regularly but needs a nudge and a map. They might want to know if today is an uposatha day (bi-monthly observance), when Songkran's religious rites fall vs. the water-throwing days, which nearby temples have upcoming bunwatthanakhi (ordination anniversary) celebrations, or simply a reminder to put a candle on the home shrine each morning. Thammasook treats Buddhist practice as a living, daily discipline — not a once-a-year temple visit.
+
+Features:
+  • **Buddhist lunar calendar**: Automatically highlights Buddhist holidays, uposatha days, and temple festival dates. Shows both the Gregorian and lunar date side-by-side. Taps into Thai Buddhist Institute data for accuracy.
+  • **Today in dharma**: Daily home screen card showing the spiritual significance of today's date — what merit-making activity is traditionally recommended, which Bodhisattva or Buddha aspect is honored, and a short translated reading from Pali or Thai tradition.
+  • **Temple finder with crowd signals**: Map layer of temples within 20km, filtered by current activity level (quiet / medium / festival). Users can check in at temples they've visited, building a personal merit map over time.
+  • **Merit journal**: Log your dharma activities — alms-giving, temple visits, candle offerings, Pali chanting, animal releases, Dhamma book donations. Shows your practice history as a streak-calendar heatmap so consistency becomes visible.
+  • **Festival deep-dive cards**: When a major festival approaches (Songkran, Kathina, Makha Bucha, Visakha Bucha), the app surfaces a card explaining the religious meaning, historical origin, and the specific rites recommended for that day — not just "it's a holiday."
+  • **Smart reminders**: Set recurring daily reminders (morning shrine, evening reflection) or one-time alerts for upcoming observance days. Option to remind you to make merit before a holy day rather than on it.
+
+💰 Free — full Buddhist calendar, temple finder, basic merit journal (30 entries/month), 3 festival deep-dives/week. Pro (฿149/year) — unlimited journal entries, all festival deep-dives unlocked, practice streak analytics, "nearest uposatha day" widget, export merit record as shareable card.
 📱 App Idea: Dock
 
 Your phone is already on your nightstand. Dock turns it into a sleep sentinel — no wearable required.
