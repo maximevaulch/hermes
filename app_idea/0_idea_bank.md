@@ -4,6 +4,27 @@
 
 ---
 
+---
+
+**Idea #23** — 2026-04-19 at 13:03 BKT
+
+📱 App Idea: **Ta Krai (ต่อไปใคร) — The Street Food Queue App**
+
+"No more standing in line for your khao man gai. Your turn arrives, not you."
+
+Thailand's iconic street food culture runs on informal queues — and informal queues are broken. At a popular pad thai cart in Yaek Sri Udom, the line forms sideways, nobody knows whose order is whose, and the vendor shouts "ใครสั่งผัดไทยไปแล้ว?" to crickets. Meanwhile, customers either abandon the queue after 20 minutes or stand rigidly nearby, unable to grab a coffee nearby without losing their spot. Ta Krai fixes this — for vendors it's a queue management system that runs itself, for customers it's freedom.
+
+The user is a Bangkok office worker aged 24–38 who grabs street food 3–5 times a week, typically near their office or commute route. They love the quality of street food but hate the uncertainty — will my lunch break be 15 minutes or 45? They also frequently split orders with a colleague and need to coordinate. The vendor is a street food operator doing 100–300 orders a day who's losing revenue to walkaways and chaos.
+
+Features:
+  • **Join Queue Remotely**: See nearby Ta Krai-enabled vendors on a map, join their queue from anywhere. The app estimates your wait time and tables you in order — no standing required. Walk in when you're Number 3.
+  • **Order + Pay In-App**: Pre-order and pay through the app when you join the queue. The vendor sees your order on a simple tablet dashboard — name, items, modifications, dietary labels (สามารถ, ไม่ใส่ถั่ว). Reduces verbal miscommunication by 90%.
+  • **Split Queue, Split Order**: Tag a colleague's order to yours — both joined, both paid, one pickup. Perfect for office lunch rounds where one person is designated "the lunch gatherer."
+  • **Vendor Dashboard (Tablet App)**: A simple screen showing the queue — next 5 names, their orders, and a "Call" button that pings the customer's phone. Mark orders complete, push a "running late" nudge if needed.
+  • **Queue Analytics for Vendors**: Peak hours heatmap, average wait time by dish, walkaway rate. Vendors use this to staff appropriately and understand which dishes create bottlenecks.
+
+💰 Free for customers: unlimited queue joins, order-ahead at taking-partner vendors, split order support. Free for vendors: basic queue of 30, order display, call button. Pro for vendors (฿199/month): unlimited queue size, analytics dashboard, multi-branch support, LINE integration for order confirmations.
+
 **Idea #22** — 2026-04-19 at 12:30 BKT
 
 📱 App Idea: **Khon Dek (คนเด็ก) — The "I'm Okay" Check-In App**
