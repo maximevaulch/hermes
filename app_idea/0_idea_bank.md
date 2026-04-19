@@ -4,6 +4,27 @@
 
 ---
 
+**Idea #22** — 2026-04-19 at 12:30 BKT
+
+📱 App Idea: **Khon Dek (คนเด็ก) — The "I'm Okay" Check-In App**
+
+A daily reassurance app for elderly Thais living alone — one tap to say "I'm alive and well" every morning.
+
+Thailand is aging fast. Over 20% of the population will be 60+ by 2030, and millions of elderly live in separate households from their adult children. The phone call to check "are you okay?" is a daily source of anxiety for both sides. Khon Dek solves it with radical simplicity: one button, one second, daily peace of mind.
+
+If the tap doesn't happen, the app alerts the family circle immediately — no guilt, no awkward calls, just reassurance at scale.
+
+Features:
+  • **One-Tap Morning Check-In**: Big friendly button. "ตอนนี้สบายดี" (I'm doing well). Done in under 3 seconds.
+  • **Family Circle**: Up to 8 family members get notified if the check-in is missed. Distributed alerts prevent any one person from carrying the mental load.
+  • **Voice Check-In Option**: For users who struggle with screens, a long-press records a 5-second voice note ("ลูกสาวนี่ แม่สบายดีนะ") — the AI confirms it's a human voice, not silence.
+  • **Weekly Reassurance Report**: Sends a calm summary to family: "Mom checked in 7/7 days. Last week she checked in at 8:15am on average."
+  • **Emergency SOS**: From the same screen, a long-hold panic button calls the nearest family member + emergency contact simultaneously.
+
+💰 Free: 1 user + 3 family members, daily check-in, missed notification. Pro (99 THB/month): Unlimited family circle, voice check-in, weekly report, priority support.
+
+---
+
 **Idea #21** — 2026-04-19 at 06:31 BKT
 
 📱 App Idea: Jao
