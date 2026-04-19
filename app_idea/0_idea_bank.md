@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #24** — 2026-04-19 at 18:30 BKT
+
+📱 App Idea: **Baem Baem (แบ่มแบ่ม) — Pay-When-You-Can Micro Insurance for Gig Workers**
+
+"Accident happens. Your ฿5 a day says you're covered."
+
+Motorcycle delivery riders in Thailand log 14-hour shifts with zero safety net. A single accident — broken wrist, torn ligament — wipes out a month of income and costs ฿15,000–80,000 in medical bills. Traditional health insurance is either unaffordable (฿500+/month) or requires paperwork that a day labourer can't satisfy. Baem Baem (literally "divide divide", as in mutual aid) bridges this gap: a community-backed micro-insurance app where gig workers pool small daily contributions (฿5–15) into a collective fund, then vote on real claims from real people in their community. No underwriters, no waiting rooms, no paperwork.
+
+The primary user is a motorcycle delivery rider aged 22–45 in Bangkok, Chiang Mai, or Pattaya — someone who works via LINE MAN, Grab, or FoodPanda and earns ฿12,000–20,000/month. They are uninsured, have no employer benefits, and live one medical emergency away from a debt spiral. The secondary user is a small business owner who wants to offer group coverage to their 5–50 employees without the overhead of a corporate insurance plan.
+
+How it works: users join a "circle" — either a geographic community (neighbourhood mutual aid group) or a professional community (all riders working a specific zone). Each member contributes a daily micro-premium via a simple in-app payment. When a claim is filed (always tied to an incident report — police record or hospital receipt required), the circle's elected "verifiers" (trusted members, 3–5 people) review it and the full circle votes. A smart contract — running on a simple rules engine, not necessarily blockchain — executes the payout automatically once quorum is reached. To prevent fraud, the app cross-references incident timestamps with GPS breadcrumbs from the rider's phone and flags anomalies.
+
+Features:
+  • **Daily Micro-Premium (฿5–15/day)**: Set your own contribution tier. Higher tier = higher coverage ceiling. Contributions pause automatically if balance is low, resume when reloaded.
+  • **Community Claims Voting**: When a claim is filed, circle members get a notification. They have 48 hours to review the incident evidence and vote. Simple majority executes payout. Verifiers are randomly rotated every quarter.
+  • **GPS Incident Verification**: On claim submission, the app pulls the user's GPS trace from the past 2 hours and overlays it with known accident blackspots. Claims filed from a hospital 30km from the rider's last recorded location get flagged for extra scrutiny.
+  • **Emergency Advance (Pro Feature)**: If a claim is pending but the rider needs cash urgently, Baem Baem can advance up to 50% of the expected payout at 0% interest, recovered from the final claim.
+  • **Rider Wellness Dashboard**: Track your driving patterns — peak accident hours on your route, suggested rest breaks, accident risk score for today's conditions (rain, night driving). A proactive safety nudge rather than reactive insurance.
+
+💰 Free: daily contributions, community voting, basic coverage up to ฿5,000 per incident. Pro (฿49/month): emergency advance, unlimited claims, GPS incident verification, wellness dashboard, multi-circle membership.
+
+---
+
 ---
 
 **Idea #23** — 2026-04-19 at 13:03 BKT
