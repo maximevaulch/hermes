@@ -4,6 +4,24 @@
 
 ---
 
+**Idea #25** — 2026-04-20 at 06:30 BKT
+
+📱 App Idea: Parkuru
+
+Turn any neighborhood run into a guided audio tour.
+
+Running through an unfamiliar neighborhood is wasted opportunity — you pass landmarks, history, and hidden gems without knowing what you're seeing. Parkuru lets local runners and walkers record audio-guided routes, turning their favorite trails into monetizable experiences. Follow routes from creators you trust, and explore cities the way locals actually move through them.
+
+Features:
+  • **Audio Route Recording**: Record your run/walk with GPS waypoints; drop in audio commentary at any landmark that auto-plays when you approach
+  • **Route Marketplace**: Browse routes by neighborhood, distance, or creator; preview snippets before downloading; follow creators like a podcast you can jog to
+  • **Social Pace Groups**: Join or create running groups that tackle the same route together, with live leaderboard of who's where on the trail
+  • **Offline Maps**: Download routes for areas with poor connectivity — essential for trail runners and international travelers
+
+💰 Free: 3 route downloads/month, unlimited free routes under 3km. Pro ($4.99/mo): Unlimited downloads, offline routes, creator analytics dashboard.
+
+---
+
 **Idea #24** — 2026-04-19 at 18:30 BKT
 
 📱 App Idea: **Baem Baem (แบ่มแบ่ม) — Pay-When-You-Can Micro Insurance for Gig Workers**
