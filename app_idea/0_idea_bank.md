@@ -4,6 +4,28 @@
 
 ---
 
+**Idea #28** — 2026-04-21 at 06:31 BKT
+
+📱 App Idea: ParkSpot
+
+A peer-to-peer parking space sharing app for chaotic cities — turn your driveway into income, find spots instantly.
+
+In dense cities across Asia, Latin America, and Africa, drivers spend 20+ minutes per trip hunting for parking. That's roughly 300 hours a year per driver wasted circling blocks, burning fuel, and adding congestion. Meanwhile, private homeowners with driveways, shade trees, or reserved spaces have no way to monetize empty spots. Informal curb-side parking is the only system — and it's broken for everyone.
+
+ParkSpot bridges this gap: drivers leaving a spot broadcast their departure time to nearby searchers, who can claim and navigate directly. Think Airbnb for parking spots. The community maintains a live map of available spaces, rated and verified by users. In neighborhoods where no formal parking infrastructure exists, the crowd becomes the infrastructure.
+
+The app works because it mirrors the informal economy already happening — flagging down a guard, asking a shop owner — but makes it instant, traceable, and cashless. In markets like Bangkok, São Paulo, Mumbai, and Manila, this is a genuine daily utility, not a luxury. Early adoption spreads through word-of-mouth among rideshare drivers and delivery workers who depend on efficient parking the most.
+
+Features:
+  • **Live Spot Map**: Community-updated map of available parking spots with real-time availability, updated as drivers leave or claim spaces
+  • **Claim & Navigate**: Drivers broadcast departure time; nearby searchers claim the spot and get turn-by-turn navigation to it
+  • **In-App Credits**: Cashless peer payment with small transaction fee; earnings redeemable for parking claims or withdrawn to mobile money
+  • **Driver Verification**: Multi-layer rating system for both parkers and searchers; repeat no-shows are flagged and suspended
+
+💰 Free: 3 spot claims/day, standard map, basic ratings. Pro ($2.99/month or $19.99/year): unlimited claims, live navigation integration, priority spot visibility during peak hours, and earnings multiplier (earn 1.5x per transaction).
+
+---
+
 **Idea #27** — 2026-04-20 at 18:30 BKT
 
 📱 App Idea: MindScribe — Your AI Journal That Listens
