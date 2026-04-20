@@ -4,6 +4,32 @@
 
 ---
 
+**Idea #27** — 2026-04-20 at 18:30 BKT
+
+📱 App Idea: MindScribe — Your AI Journal That Listens
+
+You've lived a full day. You want to capture it, but typing feels like homework and voice notes become a graveyard of rambling. MindScribe is a voice-first journaling app that listens to your day and turns the chaos of your thoughts into a beautifully structured, searchable personal record.
+
+**The Problem**
+People lose pieces of their lives every day. Interesting conversations, breakthroughs, moments of clarity, small joys — they vanish because the friction of capturing them is too high. Traditional journaling apps fail because they're essentially diaries, and nobody has time to sit down and write after a long day. Voice notes help, but they're unorganized, impossible to search, and rarely revisited.
+
+**Who It's For**
+The overextended professional processing a career change. The backpacker who wants to remember every strange conversation in every strange city. The new parent trying to hold onto moments before they blur. The introspective person who thinks best out loud. Anyone who feels like life is moving too fast to keep a record.
+
+**Why It Works**
+MindScribe removes all friction from journaling — just talk. The app transcribes, organizes, and structures your entries automatically. Over time, it surfaces patterns: "You seem happiest on Thursdays." "You've mentioned anxiety about X five times this month." It transforms a habit you've always meant to build into something effortless that builds itself.
+
+Features:
+  • **Speak Your Life**: Record voice entries anytime. AI transcribes, cleans up filler words, and organizes thoughts into coherent journal entries with timestamps and themes
+  • **Memory Map**: Visual timeline of your entries with color-coded emotion tags. Tap any moment to revisit the full entry
+  • **Pattern Insights**: Weekly AI-generated summaries that surface recurring themes, mood trends, and unexpected connections across your life
+  • **Search Everything**: Natural language search across all your entries. "Find when I talked about the job decision" returns exact moments, not just keywords
+  • **Time Capsule**: Record a voice note today, schedule it to reappear in 6 months with your past self's context — a built-in reflection tool
+
+💰 Free: Unlimited voice entries, basic transcription, 7-day memory map, weekly text summary. Pro ($4.99/month or $34.99/year): Full emotion analysis, unlimited pattern insights, Time Capsule feature, priority AI processing, and export to PDF/Markdown.
+
+---
+
 **Idea #26** — 2026-04-20 at 12:31 BKT
 
 📱 App Idea: Layover — Turn Dead Time Into Micro-Adventures
