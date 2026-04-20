@@ -4,6 +4,33 @@
 
 ---
 
+**Idea #26** — 2026-04-20 at 12:31 BKT
+
+📱 App Idea: Layover — Turn Dead Time Into Micro-Adventures
+
+You're stuck in a foreign airport for 8 hours. You could scroll your phone, or you could eat the best bowl of noodles of your life, see a famous temple, and be back in time for your connection.
+
+Layover is a smart layover companion that knows what matters: how much time you actually have, how far you can realistically go, and what's worth doing right now. Not generic tourist suggestions — context-aware adventures calibrated to your exact transit window.
+
+**The Problem**
+Long layovers are one of travel's biggest frustrations. You're stuck in an unfamiliar city with hours to kill, but you don't know the area, can't speak the language, and have no idea what's actually nearby worth your time. Most people just stay at the airport and lose half a day. The few who venture out waste time wandering or worse — miss their flight because they misjudged distance or traffic.
+
+**Who It's For**
+Business travelers with 4-10 hour layovers who want to make the most of transit time. Backpackers seeking spontaneous micro-adventures. Digital nomads who treat every airport as a potential office or exploration hub. Anyone who believes travel is too short to spend in terminal seats.
+
+**Why It Works**
+Layover solves the three biggest layover fears: "Is there anything worth doing?", "Can I actually make it in time?", and "Will I get back safely?" The app combines real-time transit data, curated local recommendations, and intelligent time buffers to create adventures that respect your constraint — you have a flight to catch. It transforms anxiety about layovers into genuine excitement about the unexpected city you're briefly in.
+
+Features:
+  • **Smart Layover Detection**: Auto-detects your flight connection and calculates exact available time (subtracting boarding buffers, security re-clearance, and terminal walking time)
+  • **Context-Aware Adventures**: Suggests activities ranked by proximity, popularity, opening hours, and match to your remaining time — not generic "top 10 attractions"
+  • **One-Button Logistics**: Stores your boarding pass, tracks your gate, and sends smart reminders with countdown timers so you explore stress-free
+  • **Offline-Ready Maps**: Downloadable city maps with marked "safe return points" and walking routes that work without data
+
+💰 Free: 3 curated layover plans per month, basic time alerts, offline terminal maps. Pro ($4.99/month or $39.99/year): Unlimited plans, real-time gate tracking, luggage storage finder, and priority access to exclusive airport-to-city transfer services.
+
+---
+
 **Idea #25** — 2026-04-20 at 06:30 BKT
 
 📱 App Idea: Parkuru
