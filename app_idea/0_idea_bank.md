@@ -4,6 +4,30 @@
 
 ---
 
+**Idea #30** — 2026-04-21 at 18:30 BKT
+
+📱 App Idea: Tempo — Energy-Smart Scheduling
+
+"Your calendar, reorganized around when you're actually at your best."
+
+Most productivity advice says "do hard things in the morning." But peak energy hours vary wildly between people — and even day to day based on sleep, exercise, and diet. Tempo is a calendar app that learns your energy patterns through wearable data (Oura, Whoop, Apple Health) and task performance feedback, then automatically reschedules your most demanding meetings and deep-work blocks to your personal peak hours.
+
+**The Problem:** People block "deep work" at 9 AM because that's what they were told, then wonder why they can't concentrate. Meanwhile, their actual peak might be 10:30 AM or even 2 PM. The cost is real: context switching during low-energy hours adds 40% more time to complex tasks (Cal Newport's research). And unlike generic "best time to work" advice, your peak shifts weekly based on sleep quality, exercise, and stress.
+
+**Who It's For:** Knowledge workers, freelancers, researchers, and high-performers who have flexibility in when they work but waste it by defaulting to "morning = productive." Also valuable for remote workers collaborating across time zones who need to protect their best hours.
+
+**Why It Works:** Instead of asking users to manually track energy (tedious), Tempo passively reads biometric data and compares it against completed task outcomes. Over 2-3 weeks it builds a personal energy map — finding your true peak, your post-lunch slump, and your second wind. It then auto-reschedules (with your approval) or warns you when booking a high-focus task during a predicted low. The nudge system gently redirects rather than forces, building long-term habit change rather than overriding the user.
+
+Features:
+  • **Biometric Integration**: Connect Oura, Whoop, Apple Health, or Fitbit to pull resting heart rate, HRV, and sleep quality — no manual logging
+  • **Smart Rescheduling**: AI reviews your upcoming week, identifies low-energy slots, and suggests or auto-moves demanding tasks to better windows with one-tap approval
+  • **Task-Outcome Feedback**: After completing (or abandoning) a deep-work block, rate the session. Tempo correlates your rating with the biometric data from that window, refining predictions over time
+  • **Time Zone Protection**: For distributed teams, automatically detects when a 9 AM meeting for you falls during your predicted energy valley — suggests alternatives to the organizer
+
+💰 Free: 1 active calendar, biometric integration, weekly energy report. Pro ($8/mo): unlimited calendars, auto-rescheduling, outcome tracking, and priority support for setting up cross-timezone protection.
+
+---
+
 **Idea #29** — 2026-04-21 at 12:30 BKT
 
 📱 App Idea: Recall
