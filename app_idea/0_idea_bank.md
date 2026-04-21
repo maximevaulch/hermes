@@ -4,6 +4,31 @@
 
 ---
 
+**Idea #31** — 2026-04-22 at 06:30 BKT
+
+📱 App Idea: Borderless Invoice
+
+"One invoice that speaks every currency — built for freelancers and agencies getting paid internationally."
+
+The average freelance designer in Bangkok invoices a Canadian client in CAD, gets paid through Wise with a 0.5% conversion fee, then pays her Thai assistant in THB with another transfer fee. She spent 3 hours this month doing currency math, chasing cross-border payment status, and worrying about late fees. Meanwhile her client in Toronto has no idea which payment method she prefers or what the exchange rate should be. This isn't a niche problem — 70 million freelancers in ASEAN+EU+LATAM+North America deal with this friction daily.
+
+**The Problem:** Freelancers and small agencies lose 3-8% of every international payment to conversion fees, transfer delays, and administrative overhead. Existing tools (Wave, FreshBooks, HoneyBook) handle invoicing but treat international payments as an afterthought — forcing clients into confusing wire transfers or expensive PayPal flows. There's no single tool that generates smart multi-currency invoices, tracks payment status across regions, and optimizes the transfer path for both parties.
+
+**Who It's For:** Freelancers and boutique agencies in Southeast Asia, Eastern Europe, and Latin America who work with clients in North America, Western Europe, or Japan — and anyone who bills in a currency their bank doesn't natively support. Also valuable for digital nomad accountants managing payments for remote teams across 5+ countries.
+
+**Why It Works:** Borderless Invoice treats international payments as a first-class feature, not an edge case. It generates invoices that let clients pay in their native currency (EUR, USD, GBP, CAD, JPY, AUD) while the freelancer receives in theirs (THB, VND, IDR, MXN, BRL, PLN) — with transparent fees shown upfront and Wise-powered transfers at mid-market rates. Over time it builds a client payment history, flagging chronically late payers and suggesting dynamic payment terms. The app handles the currency complexity so the freelancer can focus on actual work.
+
+Features:
+  • **Smart Multi-Currency Invoicing**: Create professional invoices in 30+ currencies. Client sees their native currency; you receive in yours — with transparent conversion rates and no hidden fees shown upfront
+  • **Wise Integration for Optimal Transfers**: Connects to Wise account to route payments at mid-market exchange rates, avoiding bank markup. Estimated 4-6x cheaper than PayPal/bank wire for major currency corridors
+  • **Client Payment Reputation Engine**: Tracks each client's payment history across invoices — flags slow payers, suggests dynamic payment terms (50% upfront for new clients, NET-15 for proven ones)
+  • **Cross-Border Contract Templates**: Pre-built contract templates adapted for freelancer-to-agency agreements in 20+ jurisdictions, with clause suggestions for EU VAT, US 1099, and ASEAN freelance regulations
+  • **Automated Payment Reminders**: Gentle nudges at 3, 7, and 14 days overdue. Escalates to customizable "late fee" language after 30 days, with one-tap dispute resolution
+
+💰 Free: 5 invoices/month, Wise integration, basic contract templates, USD/EUR/GBP only. Pro ($12/mo): Unlimited invoices, all 30+ currencies, client reputation tracking, advanced contracts, priority Wise transfer routing, and monthly "freelance finance" digest showing fee savings vs. traditional banks.
+
+---
+
 **Idea #30** — 2026-04-21 at 18:30 BKT
 
 📱 App Idea: Tempo — Energy-Smart Scheduling
