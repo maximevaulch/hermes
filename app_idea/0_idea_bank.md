@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #29** — 2026-04-21 at 12:30 BKT
+
+📱 App Idea: Recall
+
+One sentence that sells it: Your brain's external hard drive — automatically turns everything you read, watch, and listen to into flashcards you actually remember.
+
+pitch:
+
+We consume endless content — articles, YouTube videos, podcasts, newsletters — but retention is near zero. Most people highlight and forget. The few who try to review their highlights have no system to surface the right info at the right time. Recall solves this by acting as a passive capture layer: you highlight any text on any platform, and the app automatically generates context-rich flashcards, then reminds you via spaced repetition exactly when you're about to forget.
+
+This targets the $1.3B+ flashcard and learning app market (Anki, Quizlet, RemNote) but with a key difference: zero friction. No manual card creation. No app hopping. You read normally, highlight instinctively, and Recall handles the memory engineering. It's designed for the TikTok generation who want results without discipline — the app does the cognitive work.
+
+**Who it's for**: Knowledge workers, med/law students, language learners, avid readers, and anyone who reads a lot but feels like nothing sticks.
+
+Features:
+  • **Auto-Flashcard Generation**: Highlight any text in Chrome/Mobile browser, and Recall generates a flashcard with the original context, key terms defined, and a recall prompt. Works on articles, YouTube subtitles, PDF highlights, and podcast transcripts.
+  • **Spaced Repetition Engine**: SM-2 algorithm schedules reviews at the optimal forgetting point. Daily 5-minute review sessions replace cramming forever.
+  • **Cross-Device Sync + Offline Queue**: All cards sync across iOS/Android/Chrome. Offline mode queues new cards when connectivity drops, syncs when back online.
+
+💰 Free: 100 cards/month, 1 review session/day, basic sync. Pro ($4.99/month): Unlimited cards, unlimited reviews, priority sync, "insights" dashboard showing retention rates and streaks.
+
+---
+
 **Idea #28** — 2026-04-21 at 06:31 BKT
 
 📱 App Idea: ParkSpot
