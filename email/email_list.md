@@ -40,6 +40,12 @@
   - Language: EN
   - Context: The guy who makes you laugh. Keep it light, crack jokes, don't take anything seriously when writing to him.
 
+- **François (Ghislain)**
+  - Email: ghislain.francois@gmail.com
+  - Address: informal
+  - Language: FR
+  - Context: Poto.
+
 ## Business
 
 - **Maxime (self)**
