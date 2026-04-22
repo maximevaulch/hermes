@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #33** — 2026-04-22 at 18:30 BKT
+
+📱 App Idea: ToneShift
+
+One-line pitch: An AI-powered tone analyzer that rewrites your messages to land exactly as you intend — diplomatic at work, warm with family, confident in negotiations.
+
+Have you ever sent a message that sounded perfectly normal to you, but the recipient read it as harsh? Or drafted a careful email that came across as cold? ToneShift solves the gap between what you mean and what people read. It sits as a keyboard or overlay in any app and analyzes your draft in real-time — detecting whether your tone reads as assertive, passive, urgent, or dismissive — then offers rewritten alternatives that preserve your core message but shift the emotional register.
+
+The core problem isn't language — it's emotional translation across cultures, personalities, and communication styles. A Thai user might write "ปลา" (plain) when they mean "this works but could be better," but a Western colleague reads it as catastrophe. A French manager's "nous allons revoir ce point" (we will review this point) reads as neutral, but carries the weight of serious concern. ToneShift maps these gaps and bridges them automatically.
+
+The audience is broad: professionals managing international teams, remote workers communicating across time zones, anyone who's ever had a text misread. The free tier gives you tone detection and one rewrite per day. Pro ($4.99/month) unlocks unlimited rewrites, cultural context tips (e.g., "in Germany, this phrase reads as confrontational — soften it"), and a private tone profile you build over time so the AI learns your voice and corrects for your blind spots. Monetization scales with B2B team plans for enterprises managing global customer support or sales teams.
+
+Features:
+  • **Real-time tone analysis**: Detects 12 tone dimensions (urgency, warmth, formality, directness, empathy, etc.) as you type
+  • **One-tap rewrite**: Offers 3 alternative phrasings that preserve intent but shift emotional register
+  • **Cultural context layer**: Flags phrases that land differently across Thai, Western European, East Asian, and Middle Eastern communication norms
+  • **Tone profile**: Learns your natural voice over time and auto-corrects your blind spots
+  • **Platform overlay**: Works as a keyboard extension or copy-paste tool in any app (email, Slack, LINE, WhatsApp)
+
+💰 Free: 1 rewrite/day, basic tone detection. Pro: Unlimited rewrites + cultural intelligence + tone profile for $4.99/month.
+
+---
+
 **Idea #32** — 2026-04-22 at 12:30 BKT
 
 📱 App Idea: SafeSpot
