@@ -4,6 +4,26 @@
 
 ---
 
+**Idea #34** — 2026-04-23 at 06:30 BKT
+
+📱 App Idea: LeaveGuard
+
+One trip abroad shouldn't cost you your apartment, your health insurance, or your tax residency. LeaveGuard is the first app built specifically for "temporary leavers" — digital nomads, migrant workers, expats on extended home visits, and students abroad — people who need to leave a country for weeks or months without severing their legal ties to it.
+
+Most travel apps assume you're a tourist or a permanent emigrantor. LeaveGuard assumes you're coming back. It tracks the 90-day rule, the 183-day tax residency clock, address residency requirements, mail hold requests, paused subscriptions, and automated bill payments — all in one place. Before you even pack, it tells you: "You're at day 76 of your 90-day Schengen allowance. Here's what renewing it looks like." And when you're abroad, gentle nudges arrive: "Your Thai health insurance renewal is in 12 days — tap to renew without calling."
+
+The target user is anyone on a visa with a day-counting requirement (Schengen, UK, Japan, South Korea, Thailand, etc.) or anyone with residency ties they can't afford to lose. The market is enormous and growing: remote workers, gap year travelers, diaspora communities, and seasonal workers. The app works because the problem is universal across dozens of countries, the rules are complex and easy to get wrong, and the stakes — losing residency, overstaying a visa, getting taxed as a non-resident — are high enough to motivate users to pay.
+
+Features:
+  • **Visa Countdown Dashboard**: Track active day-counting visas (Schengen, UK, Japan, etc.) with a visual timeline showing used, remaining, and "danger zone" days before expiry.
+  • **Residency Protector Alerts**: Configurable alerts for tax residency thresholds (e.g., 183 days), address verification deadlines, and health insurance lapse windows — with country-specific rule sets.
+  • **Travel Ledger**: Log every border crossing with GPS-verified entry/exit stamps to build a tamper-proof record of your physical presence, exportable as a PDF for visa applications or tax disputes.
+  • **Subscription & Bill Pause Manager**: See all your active subscriptions and recurring bills; mark them "paused during travel" and get reminders to unpause on return so you don't waste money or miss a renewal.
+
+💰 Free: 1 visa tracker + 5 travel entries. Pro ($2.99/mo): Unlimited visa trackers, residency alerts, Travel Ledger export, and multi-country support.
+
+---
+
 **Idea #33** — 2026-04-22 at 18:30 BKT
 
 📱 App Idea: ToneShift
