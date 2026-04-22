@@ -4,6 +4,30 @@
 
 ---
 
+**Idea #32** — 2026-04-22 at 12:30 BKT
+
+📱 App Idea: SafeSpot
+
+For solo female travelers and digital nomads who need instant safety validation in unfamiliar cities.
+
+Solo travelers and women exploring new cities often face a common, urgent problem: you're walking alone at night or in an unfamiliar neighborhood and need to quickly find a verified safe place to stop, wait, or求助. Asking strangers is risky; generic travel guides don't tell you which specific cafes, hotels, or police stations other travelers actually trust. SafeSpot solves this with real-time, crowdsourced safety ratings from a community of solo travelers who actually been there.
+
+When a user checks in at a public location and marks it "safe," nearby SafeSpot users instantly see it appear as a verified safe spot. The app shows you only spots rated by travelers like you — not tourists, not generic reviews — with how recent the rating is. The Emergency Guardian mode lets you share live location and audio stream to up to 3 trusted contacts with one tap, and you can even trigger a silent alert that sends everything without the attacker knowing. Offline mode caches your route so you always have a safe way home.
+
+**Who it's for:** Solo female travelers, digital nomads, LGBTQ+ travelers in countries with ambiguous safety records, and anyone who travels for work in unfamiliar cities.
+
+**Why it works:** Trust is everything in safety. A review from a generic crowdsourced map means nothing when you're in a sketchy alley at 11pm. But a rating from another solo female traveler who was just there? That's actionable. The social proof model means the more travelers use it, the more valuable it gets — creating a strong network effect in the cities where safety matters most.
+
+Features:
+  • **Verified Safe Spots**: Crowdsourced check-ins from solo travelers mark locations as safe. See only recent ratings (within 24h) from the community.
+  • **Emergency Guardian Mode**: One-tap live location + audio stream to 3 trusted contacts. Silent alert option that captures everything without alerting attackers.
+  • **Route Guardian**: Draw your intended route before you walk. If you go off-route or go silent, SafeSpot automatically alerts your guardians.
+  • **Offline Safe Zones**: Pre-cache safe spots for any city before you arrive — works without data on arrival.
+
+💰 Free: Unlimited safe spot discovery + 1 active Guardian contact. Pro ($4.99/month): Unlimited Guardian contacts, 24/7 human safety line, unlimited route tracking, and advanced location history.
+
+---
+
 **Idea #31** — 2026-04-22 at 06:30 BKT
 
 📱 App Idea: Borderless Invoice
