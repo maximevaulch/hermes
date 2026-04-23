@@ -4,6 +4,31 @@
 
 ---
 
+---
+
+**Idea #37** — 2026-04-24 at 06:31 BKT
+
+📱 App Idea: Noodle
+
+Your next language — learned in 60-second bites from real people, not textbooks.
+
+Noodle is a language-learning app built around TikTok-style vertical videos from native speakers around the world. Unlike Duolingo's gamified drills or iTalki's expensive 1-on-1 sessions, Noodle sits in the sweet spot: authentic, short-form content that makes learning feel less like studying and more like scrolling. Users watch 15-second clips of native speakers using a word or phrase in real context — a street vendor in Mexico City, a barista in Seoul, a grandmother in Lyon — then Duolingo-style micro-lessons lock in the pattern. AI pronunciation scoring gives instant feedback. Weekly community challenges keep users coming back.
+
+**The problem:** Language apps suffer from a credibility gap. Duolingo gets users to Day 3; Busuu gets them to Day 7; by Day 30, most have dropped off entirely. The core issue isn't gamification — it's that apps teach you to pass exercises, not to actually speak. Users can conjugate verbs perfectly but freeze when a real person speaks at natural speed. Meanwhile, YouTube immersion works but has no structure, no feedback, and no accountability.
+
+**Who it's for:** Adults 18-45 who tried a language app and quit, or who are learning a language but feel stuck in " textbook mode." Particularly strong appeal for travelers, remote workers, and cross-border professionals in Southeast Asia, Latin America, and Europe who need practical conversation skills, not academic grammar.
+
+**Why it works:** Noodle applies the TikTok algorithm to language education — content is short, addictive, and personalized to your level and interests. The algorithm serves clips just slightly above your ability level (i+1), so you're always challenged but not overwhelmed. Real voices in real contexts build the ear training that textbooks can't. Community challenges create social accountability that individual apps lack. And the creator economy means native speakers earn money teaching their own language — an infinite, self-sustaining content engine.
+
+Features:
+  • **Native speaker clips**: 15-second vertical videos of real people using words/phrases in authentic contexts, tagged by dialect, region, and emotion
+  • **Adaptive difficulty**: AI serves clips matching your level, ramping up complexity as you improve
+  • **Pronunciation scoring**: Record yourself saying the phrase and get instant AI feedback on accent and rhythm
+  • **Weekly challenges**: Community-wide streaks and leaderboards tied to themed topics ("Food Week", "Travel Talk")
+  • **Creator marketplace**: Native speakers upload clips and earn per view — natural content flywheel that scales indefinitely
+
+💰 Free: Unlimited clips, 5 pronunciation checks/day, 3 community challenges/month. Pro ($5.99/mo): Unlimited pronunciation scoring, offline mode, advanced grammar explanations, custom vocabulary lists, priority creator content. Team tier ($9.99/mo per seat): Progress tracking for groups, shared challenges, business phrase packs.
+
 **Idea #36** — 2026-04-23 at 18:30 BKT
 
 📱 App Idea: VoiceDesk
