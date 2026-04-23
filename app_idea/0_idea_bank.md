@@ -4,6 +4,31 @@
 
 ---
 
+**Idea #36** — 2026-04-23 at 18:30 BKT
+
+📱 App Idea: VoiceDesk
+
+Your words, perfectly organized — across every device, forever.
+
+VoiceDesk is an AI-powered voice notes app that transforms the way professionals capture and recall information. Unlike basic voice recorders, it transcribes in real-time, automatically structures your thoughts into categories, and lets you search across every word you've ever spoken. It detects action items, deadlines, and questions in your speech and creates a smart follow-up dashboard — so that brilliant idea you had in the shower actually becomes a task someday.
+
+**The problem:** Voice notes are great for capturing thoughts on the go, but they're a nightmare to organize and search. Most people's voice note apps become a graveyard of unplayed recordings labeled "Recording 47." Meanwhile, actionable insights from calls, meetings, and creative bursts get lost because there's no frictionless way to extract structure from speech.
+
+**Who it's for:** Busy professionals — consultants, managers, founders, and anyone who has too many thoughts and too little time to type them all out. Particularly valuable for people who think faster than they type, conduct client calls, or need to capture meeting notes hands-free.
+
+**Why it works:** VoiceDesk treats voice as a first-class data type, not an afterthought. Real-time transcription with speaker detection means meeting notes are already written before you finish talking. The AI parses your speech for commitments ("I'll send the proposal by Friday") and creates follow-up tasks automatically. Full-text search across all your voice notes means you can find that idea you mentioned three months ago in seconds. And with cross-device sync, your voice notes are always accessible — phone, laptop, or browser.
+
+Features:
+  • **Real-time transcription**: Speech-to-text as you record, with speaker labels for multi-person calls
+  • **Smart action item extraction**: AI detects commitments, deadlines, and questions and creates a task dashboard
+  • **Universal search**: Find any word or phrase across your entire voice notes history instantly
+  • **Frictionless capture**: One-tap recording from lock screen, widget, or Bluetooth button
+  • **Playback speed control**: 0.5x to 3x playback with silence skipping for replaying recordings fast
+
+💰 Free: Unlimited voice notes (up to 1hr each), 5hrs/month transcription, basic search. Pro ($4.99/mo): Unlimited transcription, full-text search across all notes, priority processing, export to PDF/Notion, unlimited cloud storage.
+
+---
+
 **Idea #35** — 2026-04-23 at 12:30 BKT
 
 📱 App Idea: WanderList
