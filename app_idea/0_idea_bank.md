@@ -4,6 +4,32 @@
 
 ---
 
+**Idea #35** — 2026-04-23 at 12:30 BKT
+
+📱 App Idea: WanderList
+
+Never forget your charger — or your kid's favorite stuffed animal — again.
+
+WanderList is an AI-powered packing assistant that generates smart, personalized packing lists by connecting to your calendar, email confirmations, and real-time weather forecasts at your destination. Unlike generic checklist apps, it learns from what you actually use on trips and what you end up buying abroad, continuously refining its recommendations. It knows you always forget headphones on business trips and that your toddler won't sleep without that specific blanket.
+
+**The problem:** Everyone overpacks clothes they never wear, yet still forgets the one thing that matters. Existing packing apps are static lists you fill out manually every time — and they don't talk to your actual travel plans. Business travelers freeze because they didn't pack a suit jacket; families miss the宝宝的 fever medicine because no one thought to add it.
+
+**Who it's for:** Frequent travelers — road warriors, digital nomads, families, weekend adventurers — who want to arrive knowing they're genuinely prepared, not just packed.
+
+**Why it works:** WanderList ties packing to intent. When you forward a booking confirmation email, the app extracts destination, dates, and trip type and auto-generates a list. It pulls weather data to suggest rain gear or sunscreen. It learns from your past trips: "You wore the hiking boots twice last time, consider packing lighter." And for families, it maintains profiles per child so you never forget the melatonin gummies for long flights.
+
+Features:
+  • **Smart List Generation**: Forward any booking email and WanderList parses it — extracts destination, dates, accommodation — and builds a list from scratch with suggested categories
+  • **Weather-Aware Suggestions**: Pulls 10-day forecast for your destination and nudges you toward a rain jacket or extra socks based on what's coming
+  • **Wardrobe Integration**: Connect photos of your closet so the app suggests outfits from what you actually own, reducing decision fatigue
+  • **Family Profiles**: Per-child packing lists that remember preferences (that specific stuffed animal, the melatonin, the color-coding trick that keeps them calm)
+  • **Post-Trip Learning**: After each trip, rate what you used and what you forgot — the app quietly improves future lists
+  • **Collaboration Mode**: Share a family list so everyone checks off their own items, with a "still missing" alert before you leave for the airport
+
+💰 Free: Unlimited trips, basic AI list generation, weather integration. Pro ($4.99/month or $39.99/year): Unlimited family profiles, wardrobe AI styling suggestions, priority email parsing, and export to Excel/Notion.
+
+---
+
 **Idea #34** — 2026-04-23 at 06:30 BKT
 
 📱 App Idea: LeaveGuard
