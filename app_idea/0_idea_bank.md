@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #39** — 2026-04-24 at 18:31 BKT
+
+📱 App Idea: TasteVenture
+
+A marketplace connecting travelers with local home cooks for authentic shared meals.
+
+Problem: Travelers crave authentic local food experiences but tourist restaurants are overpriced and inauthentic, while food tours feel like spectator events. Home dining via word-of-mouth is rare and risky — you never know what you're getting into with a stranger's kitchen.
+
+Who it's for: Solo travelers and digital nomads aged 25-50 seeking real cultural connection through food. Also home cooks worldwide who want to earn supplemental income sharing their heritage cuisine.
+
+Why it works: Food is the most universal conversation starter — everyone eats, everyone has an opinion, and sharing a meal creates bonds no tour can replicate. The model works globally and scales through existing supply (any home kitchen). It monetizes cultural heritage directly, giving hosts a prideful income stream rather than just tips.
+
+Features:
+  • **Discovery Feed**: Browse local hosts by cuisine type, dietary accommodation, neighborhood, and availability. Photos of past meals, not stock food photography.
+  • **Meal Verification System**: Hosts submit their kitchen for a lightweight verification (photo-based, reviewed within 48h). Guests rate post-meal on food quality, cleanliness, and authenticity — builds trust over time.
+  • **Dietary Smart Matching**: Filter by 40+ dietary restrictions (halal, vegan, gluten-free, allergies) — matching engine surfaces compatible hosts first.
+  • **Experience Bundles**: Hosts can offer "meal + market tour" or "meal + cooking lesson" add-ons. Packages increase average transaction value.
+  • **Safe Payments**: Guest pays via in-app escrow. Funds released to host 24h after meal completion. Disputes handled via photo evidence review.
+
+💰 Free: 3 meal bookings/month, unlimited browsing, dietary filters. Pro: Unlimited bookings + 0% fees ($9.99/month or $79/year). Hosts keep 100% on Pro — free tier takes 15% commission.
+
+---
+
 **Idea #38** — 2026-04-24 at 12:30 BKT
 
 📱 App Idea: TabShare
