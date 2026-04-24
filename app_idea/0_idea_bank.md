@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #40** — 2026-04-24 at 23:34 BKT
+
+📱 App Idea: Waitless
+
+Your spot in line, in your pocket.
+
+Problem: In much of Asia, the Middle East, and Africa, queuing is a daily grind — government offices, hospitals, telecom shops, concert venues. The current system: you take a paper ticket, sit (or stand) for hours, and pray your number comes up before closing time. You can't leave to grab coffee. You can't run errands. Early birds lose half their day; latecomers get turned away at 4:45pm with no recourse. Existing digital queue systems are fragmented, venue-specific, and require dedicated hardware that most small businesses can't afford.
+
+Who it's for: Anyone who's ever spent a Tuesday morning in a government office, a clinic, or a bank branch. The primary user is the working adult in Bangkok, Jakarta, Cairo, or Lagos who can't afford to waste a day on a maybe. The secondary user is the small business or municipal office that wants to modernize but can't afford a custom ticketing system.
+
+Why it works: Waitless turns any paper-ticket queue into a mobile-held spot. Venues install the app (free tier supported by ads or municipal subsidy); users hold their number in the app and get live position updates and estimated wait times. When they're 3 spots away, a notification fires. They can wait anywhere — a coffee shop across the street, their car, home — and show up just in time. For venues, it means no more crowd control, fewer complaints, and data on peak hours. For users, it means reclaiming their morning. The model is inherently viral in high-traffic environments: one person in line discovers it and tells the next ten.
+
+Features:
+  • **Virtual Queue Hold**: Grab a spot via QR code scan at the venue entrance, or pre-book from home for venues that accept advance reservations. Your position and estimated wait time update in real time.
+  • **Departure Alert**: When you're 3 spots away (customizable), the app fires a notification. You show up just as your number is called — no wasted time, no lost spot.
+  • **Venue Discovery**: Browse participating venues by category (government, healthcare, retail, events), see current queue length and typical wait times before you leave home.
+  • **Guest Mode**: No account needed — scan the QR, get your number, go. Accounts save history and preferences for repeat venues.
+  • **Venue Dashboard**: Businesses get a simple web dashboard showing live queue depth, peak hour charts, and no-show rates — replacing expensive hardware ticketing systems at a fraction of the cost.
+
+💰 Free: Unlimited queue holds at ad-supported venues, guest (no-account) mode, departure alerts. Pro: Ad-free experience + unlimited advance pre-booking + history sync across devices ($1.99/month or $14.99/year). Venue onboarding is free for the first 6 months; venues pay a monthly subscription after that based on monthly ticket volume.
+
+---
+
 **Idea #39** — 2026-04-24 at 18:31 BKT
 
 📱 App Idea: TasteVenture
