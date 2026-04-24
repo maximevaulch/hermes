@@ -4,6 +4,31 @@
 
 ---
 
+**Idea #38** — 2026-04-24 at 12:30 BKT
+
+📱 App Idea: TabShare
+
+Split the bill fairly — in any currency, at the table.
+
+When a dinner includes an American, a Brit, and a Thai, the bill becomes a forensic puzzle. The American wants to pay in USD, the Brit in GBP, the Thai in THB — and nobody wants to do the math. TabShare solves it: scan the bill, assign shares in any currency, and let the app handle the FX so everyone pays their fair share.
+
+**The problem:** Existing split apps treat currency as an afterthought. Splitwise's currency conversion applies a dated mid-market rate with a 2% markup and caps multi-currency groups. Venmo doesn't work internationally at all. Most expat friend groups just avoid splitting altogether ("I'll get the next one") or default to whoever has the weakest local currency taking a loss. Venmo, Wise, and Splitwise collectively ignore a real, daily friction for everyone who lives, travels, or dines with people from different currency zones.
+
+**Who it's for:** International friend groups in ASEAN, the Middle East, and Europe — anywhere where a dinner table regularly includes USD, EUR, THB, MMK, or VND. Expat communities, digital nomad circles, international students, and travel companion groups. The secondary user is the "settler" — the person who puts the bill on their card and just wants everyone to pay them back fairly, in their own currency, without a 3% Wise markup baked in.
+
+**Why it works:** TabShare treats currency as a first-class feature, not a bug. It knows the mid-market rate at the moment of split and shows everyone exactly what they owe in their preferred currency. The "settler" model (one person pays, everyone repays them) is the default for most friend-group dinners anyway — TabShare just removes the math anxiety. Dish-level splitting (who had the expensive bottle of wine) prevents the awkward "I had water and you're charging me equal split" argument. The app is inherently viral: every international dinner is a potential new user, recruited by a friend who just saved the table 20 minutes of argument.
+
+Features:
+  • **Smart Receipt Scan**: Snap or forward a bill photo. AI parses line items, detects shared dishes, and extracts totals with tax/service breakdown
+  • **Dish-Level Assignment**: Tag individual dishes or drinks to specific people, or split items equally — customizable per line item
+  • **Multi-Currency Repayment**: Everyone pays the settler back in their preferred currency (USD, EUR, GBP, THB, VND, MMK, IDR, etc.) at the live mid-market rate, no markup shown
+  • **Cheapest Path Engine**: Analyzes payment corridors and suggests the lowest-fee method — if two people in the group have Wise accounts, TabShare routes the repayment through Wise automatically
+  • **Group Balance Ledger**: Tracks who owes what across multiple meals and currencies over time, surfacing net positions ("Alex owes you 1,200 THB across 3 dinners")
+
+💰 Free: 10 bill splits/month, up to 3 currencies per split, dish-level assignment, cheapest path suggestions. Pro ($2.99/mo): Unlimited currencies, live rate alerts before you settle, payment method routing optimization, unlimited balance ledger history.
+
+---
+
 ---
 
 **Idea #37** — 2026-04-24 at 06:31 BKT
