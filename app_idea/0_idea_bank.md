@@ -4,6 +4,26 @@
 
 ---
 
+**Idea #43** — 2026-04-26 at 06:30 BKT
+
+📱 App Idea: Slowbag
+
+A smart luggage tracker with AI-powered packing optimization for frequent travelers.
+
+You dread the morning of a trip — did you remember your charger? Your passport? Which bag has your toiletries? Slowbag is a single app that tracks every bag you own, learns your packing habits, and tells you exactly what to bring based on your destination weather, trip length, and itinerary. It syncs with airline APIs to catch delayed bags before you do, and your family can ping your bag's location if they need to reach you.
+
+The core insight: your packing list should be personal and adaptive, not a generic checklist copied from the internet. Slowbag learns from every trip —知道你 always forget your universal adapter? It reminds you. Going to Chiang Mai in July? It knows to flag rain gear and warn about dengue season. The app generates a "pack confidence score" so you leave for the airport knowing you're covered.
+
+Features:
+  • **AI Packing Lists**: Generates personalized packing lists from your trip details, weather, and your own packing history. Learns what you always forget.
+  • **Airline Bag Sync**: Integrates with airline APIs to track checked bags in real-time. Alerts you to delays before the airline announces them.
+  • **Family Location Share**: Grant trusted contacts one-tap access to your bag's live location. Perfect for families coordinating during connecting flights.
+  • **Trip Memory**: Every trip you take builds your packing profile — the app gets smarter over time, eventually predicting what you need before you even open the app.
+
+💰 Free: 1 trip/month, 2 bags, basic packing list. Pro ($4.99/month): Unlimited trips, unlimited bags, AI coaching, family share (up to 5), and historical packing analytics.
+
+---
+
 **Idea #42** — 2026-04-25 at 18:30 BKT
 
 📱 App Idea: Localee
