@@ -4,6 +4,29 @@
 
 ---
 
+**Idea #41** — 2026-04-25 at 12:30 BKT
+
+📱 App Idea: Timezone Twister
+
+A real-time multiplayer quiz & puzzle game where your local time zone is your competitive advantage — not a barrier.
+
+The problem is that the world is split into time zones, and most apps treat this as a limitation: your friend in New York can't play with you at 9 AM Bangkok time. Timezone Twister flips this. It makes time zone diversity the core game mechanic. When it's 9 AM in Bangkok and 3 AM in New York, those two players aren't just in different places — they're in completely different game states. Morning players get a "Fresh Mind" boost for pattern recognition but have slower reactions. Night players get "Owl Reflexes" for speed but take accuracy penalties. Your actual local time becomes part of your strategy.
+
+The target user is anyone whose social life crosses time zones: expats missing home, digital nomads building new friend circles, long-distance couples, international students, remote workers on global teams. They want to connect and have fun together, but scheduling is exhausting and most async games feel hollow. Timezone Twister solves this — the game runs 24/7, and you always have live opponents somewhere on the planet.
+
+What makes it work is that it turns isolation into inclusion. Playing at 3 AM suddenly feels less lonely when there's a 9 AM player in Bangkok competing alongside you. The game creates shared experiences across the time barrier rather than asking users to overcome it. It also has viral mechanics: the more time zones represented in a match, the higher the bonus multipliers, encouraging friends to drag in their overseas contacts.
+
+Features:
+  • **Time State System**: Each player has a "time state" (Morning, Afternoon, Evening, Night) that grants unique buffs/debuffs per mini-game. Your clock determines your class, not your choice.
+  • **Live Global Matchmaking**: Instant matchmaking finds 4-8 players across at least 3 different time zones for each match. Never wait for a friend to be awake.
+  • **Mix & Match Mini-Games**: Rapid-fire trivia, pattern puzzles, reaction challenges, word games. Each favors different time states, so no single state dominates.
+  • **Time Zone Cards**: Collect cards representing world cities. Play them to "travel" and swap your time state for one round — strategic bluffing meets geography trivia.
+  • **Crown the Time Zones**: Weekly world events where cities compete as teams (e.g., "Which timezone can solve 10,000 puzzles in 24 hours?"). Global leaderboards with city rankings.
+
+💰 Free: 3 matches/day, 2 mini-game modes, basic global leaderboard. Pro ($4.99/mo): Unlimited matches, all mini-games, tournament mode, custom avatars, host private rooms with password protection.
+
+---
+
 **Idea #40** — 2026-04-24 at 23:34 BKT
 
 📱 App Idea: Waitless
