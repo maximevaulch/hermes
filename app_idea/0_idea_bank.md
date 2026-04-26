@@ -4,6 +4,28 @@
 
 ---
 
+**Idea #45** — 2026-04-26 at 18:30 BKT
+
+📱 App Idea: CultureKey
+
+Passport to your neighbor's life — learn a language through the dishes, festivals, and customs that define it.
+
+Every language app makes you memorize words. CultureKey makes you *understand* people. Whether you're planning a trip to Chiang Mai, befriending a Lebanese colleague, or cooking your way through Mexico City, the app anchors vocabulary in cultural context — what goes on the table, what's celebrated in July, why your neighbor knocks three times. Language becomes a door, not a chore.
+
+The target user is the culturally curious adult (25–45) who tried Duolingo and quit because it felt like homework. They don't want to "learn Spanish" — they want to understand their wife's family, travel deeper, or feel less like a tourist. CultureKey serves this by grouping words around cultural moments: a Lunar New Year dinner, a Brazilian Sunday beach, a Japanese onsen visit. Each module is a mini-documentary + vocabulary layer + practical phrase guide. It's part language app, part cultural intelligence.
+
+The international angle is strong — the app works for any culture with enough diaspora and interest (Thai, Vietnamese, Arabic, Portuguese, Japanese all have massive global learner bases). Localization is built in from day one. And unlike consumer apps that compete on gamification, CultureKey competes on *depth* — the cultural content is the moat.
+
+Features:
+  • **Cultural Modules**: Immersive units built around real-life scenarios — a Thai wedding, a Moroccan souk, a Korean ancestral ritual — each with vocabulary, phrases, audio pronunciation, and the *why* behind the tradition
+  • **Flavor Dictionary**: Search not by word but by feeling — "I'm nervous before a meeting in Japan" — and get cultural context + survival phrases, not just translations
+  • **Living Audio**: Native speakers narrate cultural moments (market haggling, festival songs, restaurant ordering) so you hear tone, pace, and emotion, not just textbook pronunciation
+  • **Cultural Deck Maker**: Users can create and share their own modules — diaspora communities can teach their heritage, travelers can share what they learned
+
+💰 Free: 3 cultural modules (e.g., Thai Street Food, Japanese Onsen Etiquette, Mexican Día de los Muertos). Pro ($4.99/month): Unlimited modules, offline mode, "Cultural Deep Dives" with video snippets, and custom deck creation.
+
+---
+
 **Idea #44** — 2026-04-26 at 12:30 BKT
 
 📱 App Idea: Lingloot
