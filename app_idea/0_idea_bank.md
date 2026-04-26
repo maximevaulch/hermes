@@ -4,6 +4,32 @@
 
 ---
 
+**Idea #46** — 2026-04-27 at 06:30 BKT
+
+📱 App Idea: VisaFlow
+
+[One-line pitch — one sentence that sells it]
+
+Visa renewal reminders and document tracking for Southeast Asia expats.
+
+[pitch paragraphs]
+
+Southeast Asia attracts millions of expats, digital nomads, and long-stay tourists — but keeping track of visa rules, extension windows, and document requirements is a constant source of anxiety and expensive mistakes. One missed renewal can mean fines, blacklisting, or forced exits. Existing solutions are scattered across embassy websites, PDF checklists, and memory. 
+
+VisaFlow is a smart visa companion that tracks your current status, warns you before windows close, stores your documents, and explains the rules for your specific nationality and destination. It works offline (critical when traveling between offices with poor connectivity) and keeps a complete audit trail of every entry stamp, extension, and approved stay.
+
+Features:
+  • **Smart Status Dashboard**: Enter your passport, nationality, and current visa type — get a clear visual timeline of your allowed stay, days remaining, and upcoming action dates
+  • **Document Vault**: Scan and store passport stamps, TM6 arrival cards, extension receipts, and visa labels. Auto-extract dates using on-device OCR
+  • **Country Rule Engine**: Accurate visa and immigration rules for Thailand, Vietnam, Cambodia, Laos, Malaysia, and Indonesia — more countries added based on user demand
+  • **Renewal Calendar**: Configurable reminders (14 days, 7 days, 3 days, 1 day before key deadlines) with a one-tap "I've renewed" update
+  • **Border Run Planner**: For visa-on-arrival nationalities needing runs to Cambodia or Laos, get suggested crossing points, current wait times, and required documents
+  • **Family Mode**: Track multiple passports under one account — couples, families, and small teams
+
+💰 Free: 1 active visa, basic reminders, document storage (up to 10 files). Pro ($4.99/mo or $39.99/yr): unlimited visas, unlimited documents, all countries, family mode (up to 5 passports).
+
+---
+
 **Idea #45** — 2026-04-26 at 18:30 BKT
 
 📱 App Idea: CultureKey
