@@ -4,6 +4,33 @@
 
 ---
 
+**Idea #44** — 2026-04-26 at 12:30 BKT
+
+📱 App Idea: Lingloot
+
+Your surroundings become your language teacher — every foreign phrase you hear IRL becomes a vocabulary card you actually remember.
+
+The problem: language apps teach you "Dónde está la estación?" in a sterile lesson before your trip. You arrive and hear rapid colloquial Spanish everywhere — slang, filler words, mumbled corrections between locals — and none of your app knowledge transfers. Meanwhile, you're walking around hearing thousands of foreign phrases every day that are completely lost on you. That conversation at the next table? The announcement on the train? The vendor arguing with someone across the street? All gone. You can't even identify what you don't know.
+
+Lingloot turns your actual surroundings into a personalized language course. Point your phone's mic at a conversation, and the app identifies the language, captures and transcribes what's being said, translates it, and saves every unfamiliar phrase as a spaced-repetition flashcard tied to where you heard it. You weren't studying — you were just walking. But now that random argument about directions has taught you three new phrases you'll actually use because they came attached to a real, memorable moment.
+
+The key insight: you don't learn vocabulary from textbooks — you learn it from experiences that surprised you. Lingloot creates that surprise systematically. That phrase the barista shouted at the kitchen? You heard it stressed and emotional, which means it matters in that context. Lingloot tags the emotional tone and situation, so flashcards aren't just "water" — they're "water!" in the context of someone shouting an order urgently. You remember because you were there.
+
+**Who it's for:** Travelers in their first 1-6 months in a new language environment who want to absorb the language passively without dedicated study time. Also language learners who are past beginner basics but stuck in the "I understand more than I can speak" gap — Lingloot trains your ear on real colloquial speech, not textbook dialogues.
+
+**Why it works:** Passive exposure with active capture — you can't actively study every waking moment, but your phone can listen. The emotional tagging (volume, pace, context) creates much stronger memory anchors than clean audio from an app. Geographic clustering of phrases means you build location-based vocabulary naturally: you've heard "哪里?" asked near subway stations forty times but never near restaurants. The app figures that out and prioritizes.
+
+Features:
+  • **Ambient Listening Mode**: Background capture mode — Lingloot listens for foreign speech and notifies you when it detects a language you're learning. Saves battery by only processing when it detects target languages.
+  • **Real-time Transcription & Translation**: Captured audio gets transcribed and translated instantly with tap-to-expand context. Unknown phrases are saved; familiar ones are ignored (no spam).
+  • **Emotion & Context Tagging**: Volume peaks, speech pace, and nearby location context are all tagged. Flashcards show not just what was said but how: "shouted," "questioning," "casual mumble."
+  • **Spaced Repetition Vault**: Every captured phrase becomes a flashcard in your personal vault. Built-in SRS (Spaced Repetition) reviews ensure you see each phrase at optimal intervals to lock it in long-term.
+  • **Phrase Map**: All captured phrases cluster on a map — see exactly which phrases you've heard on which streets. Identifies gaps: you've heard 15 phrases near the market but zero near the hospital.
+
+💰 Free: 1 target language, 50 phrase captures/month, basic SRS review. Pro ($6.99/mo): Unlimited captures, 5 target languages, offline mode, advanced grammar breakdown on tap, and phrase map heat visualization.
+
+---
+
 **Idea #43** — 2026-04-26 at 06:30 BKT
 
 📱 App Idea: Slowbag
