@@ -4,6 +4,30 @@
 
 ---
 
+**Idea #47** — 2026-04-27 at 12:31 BKT
+
+📱 App Idea: VisaViz — Passport Power Ranking
+
+Your passport opens doors. But which ones?
+
+[One-line pitch: See instantly which countries welcome you, discover hidden visa-free opportunities, and track your travel freedom score over time.]
+
+For most travelers, visa rules are a frustrating maze — scattered across government websites, full of jargon, and impossible to compare. A Thai passport holder planning a business trip to Europe doesn't just want to know "do I need a visa?" They want to know: can I transit through Singapore on the way? Which countries give me the longest stay? How does my passport rank globally?
+
+VisaViz solves this with a beautiful interactive world map. You enter your nationality once, and every country lights up green (visa-free), yellow (visa on arrival), or red (requires visa). Tap any country for a detailed breakdown: allowed stay duration, required documents, transit rules, and application links. The app builds your personal travel history over time (manual entry or passport scan), and the AI engine — VisaScore — surfaces opportunities: "You've visited 12 countries. You could visit 47 more without a new visa. Here are 5 popular destinations you're missing."
+
+The magic is the Passport Power Ranking — a globally comparable score (think credit score, but for travel freedom) that updates monthly based on Henley Passport Index data. Watch your score climb as you travel. Compare your passport power with friends. Discover how close you are to unlocking a higher tier of travel freedom.
+
+Features:
+  • **Passport Scanner**: Point your camera at your passport — AI extracts your nationality and flags, auto-populates your profile in seconds
+  • **Interactive World Map**: Color-coded visa requirements for 200+ countries. Tap any nation for stay limits, transit rules, and official links
+  • **VisaScore and Ranking**: A personal travel freedom score (0-1000) that tracks your climbing passport power as you visit more countries
+  • **Opportunity Engine**: AI recommendations based on your travel history: "You're 3 visas away from unlocking visa-free access to the entire EU schengen zone"
+
+💰 Free: Passport profile, full interactive map, VisaScore. Pro ($2.99/month or $19.99/year): Opportunity Engine, unlimited travel history, Passport Power comparison with friends, offline visa guides for 50 top destinations.
+
+---
+
 **Idea #46** — 2026-04-27 at 06:30 BKT
 
 📱 App Idea: VisaFlow
