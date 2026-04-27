@@ -4,6 +4,27 @@
 
 ---
 
+**Idea #48** — 2026-04-27 at 18:31 BKT
+
+📱 App Idea: SplitSleep
+
+A travel sleep tracker that calculates and automates circadian rhythm shifts for frequent flyers.
+
+Jet lag costs travelers 1-3 unproductive days per trip. 1.5B+ international travelers/year want to land running, not exhausted. Most sleep apps track sleep — but none solve the root cause: your circadian clock is out of sync with destination time. SplitSleep combines GPS-triggered timezone detection with a Circadian Phase Shift Calculator that prescribes exact light/darkness windows to reset your body clock 40% faster than waiting it out.
+
+The target user is the business traveler doing transatlantic flights monthly, the digital nomad hopping Southeast Asian timezones every two weeks, or the backpacker on a multi-country trek who needs their body to adapt on the go. International market is obvious — any traveler crossing 3+ time zones wins. The app wins because it treats jet lag as a solvable engineering problem, not just a wellness inconvenience. The smart-home automation layer (Hue lights, smart blinds) removes the friction of "I know I should get light now but I forgot."
+
+Features:
+  • **Circadian Phase Shift Calculator**: enter origin + destination, get a personalized light/darkness schedule for the 3 days before and after travel
+  • **GPS Auto-Timezone Sync**: detects when you've crossed a timezone boundary and proactively prompts shift planning
+  • **Smart Light Automation**: integrates with Philips Hue / smart blinds to auto-adjust your environment at prescribed light windows
+  • **Sleep & Energy Tracking**: logs sleep quality and energy peaks/troughs to refine future shift recommendations
+  • **Route Memory**: learns how different flight routes (e.g. Bangkok → London vs Bangkok → NYC) affect you differently
+
+💰 Free: unlimited sleep/energy logging + 1 active shift plan. Pro ($4.99/mo or $39.99/yr): unlimited active shift plans, smart home automation, route memory analytics, and export to Google Calendar.
+
+---
+
 **Idea #47** — 2026-04-27 at 12:31 BKT
 
 📱 App Idea: VisaViz — Passport Power Ranking
