@@ -4,6 +4,34 @@
 
 ---
 
+**Idea #49** — 2026-04-28 at 06:31 BKT
+
+📱 App Idea: ShiftSync
+
+**One-tap shift gigging for informal labor markets**
+
+ShiftSync is a mobile-first shift marketplace connecting gig workers (construction helpers, delivery riders, event staff, daily-wage laborers) with employers who need flexible, same-day staffing — built for Southeast Asia and Africa where billions of people depend on informal work and have unreliable internet.
+
+**The Problem:**
+In cities like Bangkok, Lagos, or Jakarta, millions of workers rely on informal "daily hire" labor — they wait at physical labor markets hoping someone shows up with work. Employers struggle to fill last-minute shifts. Neither side has visibility into the other. WiFi is spotty, data is expensive, and workers can't afford to be always-online. The result: wasted hours, missed work, and chronic underemployment.
+
+**Who it's for:**
+Daily-wage gig workers aged 18–45 with smartphones but inconsistent income, plus small businesses, event organizers, logistics firms, and construction companies that need fast, reliable staffing without agency fees.
+
+**Why it works:**
+ShiftSync is offline-first — workers can browse, claim, and confirm shifts via USSD codes or lightweight app sync when connectivity returns. A built-in reputation score (earned through completed shifts) builds trust on both sides. In-app payments are held in escrow and released upon shift verification, eliminating the biggest pain point: late or missing payment. GPS check-in/check-out replaces punch clocks.
+
+Features:
+  • **Shift Discovery**: Browse nearby available shifts filtered by type, pay, distance, and start time — works offline with cached listings
+  • **Instant Claim & Confirm**: One-tap claim with 15-minute confirmation window; employer approves in seconds
+  • **Reputation Engine**: Composite score based on shift completion rate, punctuality, and employer ratings
+  • **Escrow Payments**: Employer pre-funds shift; payment held until GPS-verified check-out; auto-pays worker within the hour
+  • **Offline USSD Fallback**: Workers without data can dial a code to check shift status and receive SMS confirmations
+
+💰 **Free tier**: Unlimited shift browsing, 5 active claims/month. Pro (Worker): unlimited claims, priority visibility, withdrawal to mobile money for $1.99/month. Pro (Employer): unlimited shift postings, verified badge, analytics dashboard for $9.99/month.
+
+---
+
 **Idea #48** — 2026-04-27 at 18:31 BKT
 
 📱 App Idea: SplitSleep
