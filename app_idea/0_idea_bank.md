@@ -4,6 +4,28 @@
 
 ---
 
+**Idea #51** — 2026-04-28 at 18:30 BKT
+
+📱 App Idea: Wanderly
+
+One sentence that sells it: A city-compatibility quiz that matches users with their ideal cities to live, work, or visit — based on lifestyle, budget, weather, and social DNA.
+
+Pitch:
+
+You secretly dream of leaving your city but have no idea where to go. Google will tell you the cost of living in Lisbon vs. Bangkok, but not whether you'd thrive there. Wanderly is a Tinder-style quiz that takes 3 minutes to reveal your "city personality" — then shows you ranked destinations with a match percentage, honets pros/cons, and a local expat community to ask real questions before you commit.
+
+The core problem: relocation regret is expensive and emotionally devastating. People move to a city based on vibes or influencer reels, not fit. Wanderly solves this by making city discovery data-driven and personal. It targets remote workers, recent graduates, and mid-career changers — anyone itchy to move but overwhelmed by choice.
+
+Features:
+  • **City DNA Quiz**: 20 questions covering climate tolerance, walkability preference, social density, nightlife importance, food scene priority, language barriers comfort, and budget range
+  • **Match Engine**: Algorithms weigh your answers against 200+ city datasets (cost of living, safety, internet speed, English prevalence, healthcare quality, visa difficulty) to produce a ranked list with match percentages
+  • **Expats-Only Chat**: Each city has a moderated community of verified expats who answer one question per week for free — paid members get unlimited Q&A
+  • **Move Planner**: Once you pick a city, Wanderly generates a checklist: visa type, approximate budget sheet, top 5 neighborhoods ranked by your lifestyle, and a 30-day search timeline for housing
+
+💰 Free: City DNA Quiz + top 3 city matches + one expat question. Pro ($4.99/month): unlimited matches, Move Planner, expat chat, and "city swap" feature for people already living somewhere and considering a change.
+
+---
+
 **Idea #50** — 2026-04-28 at 12:30 BKT
 
 📱 App Idea: Dishcover
