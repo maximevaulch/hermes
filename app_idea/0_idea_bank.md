@@ -4,6 +4,27 @@
 
 ---
 
+**Idea #50** — 2026-04-28 at 12:30 BKT
+
+📱 App Idea: Dishcover
+
+Your kitchen, the world's dinner table.
+
+Dishcover is a social dining platform connecting passionate home cooks with food lovers seeking authentic, off-the-beaten-path culinary experiences. Think Airbnb Experiences meets underground supper club — hosts list their homes, cultural menus, and availability; guests browse, book, and pay through the app. Each meal is a window into a culture, told through recipes passed down generations.
+
+The problem: Travelers and locals alike are tired of tourist-trap restaurants serving generic food. The best meals often happen in someone's kitchen, but there's no safe, trustworthy way to find or monetize these experiences. Meanwhile, talented home cooks have no platform to share their craft beyond Instagram stories.
+
+Features:
+  • **Verified Hosts**: ID check + trial meal approval ensures every host meets hygiene and safety standards before listing.
+  • **Cultural Storytelling**: Hosts create a profile page with their culinary background, family recipe history, and what makes their kitchen special — guests know the story before they sit down.
+  • **Smart Scheduling**: Set recurring dinner slots or one-off events. Guests request a booking, hosts confirm. Calendar syncs with Google/Apple.
+  • **Dishcover Wallet**: In-app payment held until 24h after the meal. Disputes rare but handled by a local community jury — not a faceless corporation.
+  • **Review with Context**: Beyond stars, guests rate specific dishes and leave voice notes describing what they tasted.
+
+💰 Free: Browse and request bookings, 3 hosted meals per year. Pro: Unlimited bookings, host badge, analytics dashboard — $6.99/month or $59/year.
+
+---
+
 **Idea #49** — 2026-04-28 at 06:31 BKT
 
 📱 App Idea: ShiftSync
